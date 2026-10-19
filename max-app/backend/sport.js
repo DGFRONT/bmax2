@@ -1,0 +1,27 @@
+// data/sport.js
+module.exports = [
+  { id: "borba_baroev", name: "ГБУ ДО «СШОР ПО ГРЕКО-РИМСКОЙ БОРЬБЕ ИМЕНИ ХАСАНА МАХАРБЕКОВИЧА БАРОЕВА»", username: "id1515919630_gos", icon: "🤼", avatar: "", deepLink: "https://max.ru/id1515919630_gos", category: "Спорт" },
+  { id: "boks", name: "ГБУ ДО \"СШОР по боксу\"", username: "id1513046901_gos", icon: "🥊", avatar: "", deepLink: "https://max.ru/id1513046901_gos", category: "Спорт" },
+  { id: "legkaya_atletika", name: "ГБУ ДО \"Спортивная школа Олимпийского резерва по легкой атлетике\"", username: "id1502025530_gos", icon: "🏃", avatar: "", deepLink: "https://max.ru/id1502025530_gos", category: "Спорт" },
+  { id: "tyazhelaya_atletika", name: "ГБУ ДО \"СШОР по тяжелой атлетике\"", username: "id1502025392_gos", icon: "🏋️", avatar: "", deepLink: "https://max.ru/id1502025392_gos", category: "Спорт" },
+  { id: "fechtovanie", name: "ГБУ ДО «СШОР по фехтованию»", username: "id1502046868_gos", icon: "🤺", avatar: "", deepLink: "https://max.ru/id1502046868_gos", category: "Спорт" },
+  { id: "gimnastika", name: "ГБУ ДО \"Спортивная школа по художественной гимнастике\"", username: "id1501034154_gos", icon: "🤸", avatar: "", deepLink: "https://max.ru/id1501034154_gos", category: "Спорт" },
+  { id: "edinoborstva", name: "ГБУ ДО «Спортивная школа единоборств»", username: "id1514002110_gos", icon: "🥋", avatar: "", deepLink: "https://max.ru/id1514002110_gos", category: "Спорт" },
+  { id: "stimul", name: "ГБУ ДО \"Спортивная школа паралимпийского резерва \"Стимул\"", username: "id1513062741_gos", icon: "♿", avatar: "", deepLink: "https://max.ru/id1513062741_gos", category: "Спорт" },
+  { id: "urozhay", name: "ГБУ ДО «Спортивная школа «Урожай»", username: "id1515910556_gos", icon: "🌾", avatar: "", deepLink: "https://max.ru/id1515910556_gos", category: "Спорт" },
+  { id: "ss2", name: "ГБУ ДО \"Спортивная школа №2\"", username: "id1502025360_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1502025360_gos", category: "Спорт" },
+  { id: "ss5", name: "Спортивная Школа №5", username: "id1501033785_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1501033785_gos", category: "Спорт" },
+  { id: "fadzaev", name: "МБУ ДО \"Спортивная школа им. А. Фадзаева\" Ирафского муниципального района", username: "id1508003726_gos", icon: "🤼", avatar: "", deepLink: "https://max.ru/id1508003726_gos", category: "Спорт" },
+  { id: "dzyudo_mozdok", name: "МБУДО СШ \"Дзюдо\"г.Моздока", username: "id1510010431_gos", icon: "🥋", avatar: "", deepLink: "https://max.ru/id1510010431_gos", category: "Спорт" },
+  { id: "ss1_mozdok", name: "МБУДО СШ№1 г. Моздока", username: "id1510011097_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1510011097_gos", category: "Спорт" },
+  { id: "ss2_mozdok", name: "МБУДО Спортивная школа №2 г.Моздока", username: "id1510010985_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1510010985_gos", category: "Спорт" },
+  { id: "ss_alagir", name: "МБУДО «СШ» г. Алагир", username: "id1514000120_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1514000120_gos", category: "Спорт" },
+  { id: "ss1", name: "МБУ ДО СШ 1", username: "id1512009801_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1512009801_gos", category: "Спорт" },
+  { id: "ss2_2", name: "МБУДО СШ 2", username: "id1512012346_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1512012346_gos", category: "Спорт" },
+  { id: "akademia_alania", name: "Академия Футбола «Алания»", username: "id1513060462_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1513060462_gos", category: "Спорт" },
+  { id: "yunost", name: "ШКОЛА ФУТБОЛА \"ЮНОСТЬ\" ЧЕМПИОНЫ", username: "id1504034113_gos", icon: "⚽", avatar: "", deepLink: "https://max.ru/id1504034113_gos", category: "Спорт" },
+  { id: "manezh", name: "ДС «Манеж»", username: "id1502017708_gos", icon: "🏟️", avatar: "", deepLink: "https://max.ru/id1502017708_gos", category: "Спорт" },
+  { id: "sok_tedeev", name: "МБУ \"СОК\" им. Е.М. Тедеева", username: "id1512005067_gos", icon: "🏟️", avatar: "", deepLink: "https://max.ru/id1512005067_gos", category: "Спорт" },
+  { id: "sjun", name: "МБУДО \"СЮН\" Пригородного муниципального района РСО - Алания", username: "id1512010902_gos", icon: "", avatar: "", deepLink: "https://max.ru/id1512010902_gos", category: "Спорт" },
+  { id: "sjn_digora", name: "МБУ ДО \"СТАНЦИЯ ЮНЫХ НАТУРАЛИСТОВ\" Г. ДИГОРА", username: "id1507003917_gos", icon: "🌱", avatar: "", deepLink: "https://max.ru/id1507003917_gos", category: "Спорт" }
+];

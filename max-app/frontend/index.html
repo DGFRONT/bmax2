@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Сервисы региона</title>
+    <script src="https://st.max.ru/js/max-web-app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-logo">️</div>
+            <h1 class="welcome-title">Сервисы региона</h1>
+            <p class="welcome-subtitle">Все государственные услуги и организации в одном месте</p>
+            <button id="startBtn" class="welcome-btn">Открыть приложение</button>
+        </div>
+    </div>
+
+    <div id="app" class="app hidden">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title" id="regionTitle">Сервисы региона</h1>
+                <button class="icon-btn" id="allOrgBtn" title="Все организации">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-box">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                    <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Найти организацию..." class="search-input">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">ОФИЦИАЛЬНЫЕ КАНАЛЫ</h2>
+            <div class="horizontal-scroll" id="popularChannels"></div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">КАТЕГОРИИ</h2>
+            <div class="categories-grid" id="categoriesGrid"></div>
+        </section>
+    </div>
+
+    <div id="categoryScreen" class="screen hidden">
+        <header class="screen-header">
+            <button class="back-btn" id="categoryBackBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="screen-title" id="categoryTitle">Категория</h1>
+        </header>
+        <div class="screen-content">
+            <div class="organizations-list" id="organizationsList"></div>
+        </div>
+    </div>
+
+    <div id="allOrgScreen" class="screen hidden">
+        <header class="screen-header">
+            <button class="back-btn" id="allOrgBackBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="screen-title">Все организации</h1>
+        </header>
+        <div class="screen-content">
+            <div class="alphabet-nav" id="alphabetNav"></div>
+            <div class="all-org-list" id="allOrgList"></div>
+        </div>
+    </div>
+
+    <script src="js/bridge.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

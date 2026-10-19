@@ -1,0 +1,85 @@
+{
+  "governor": {
+    "id": "governor",
+    "name": "Сергей Меняйло",
+    "avatar": "https://your-domain.com/assets/governor.jpg",
+    "subscribers": 50000,
+    "deepLink": "max://user/sergeimeniaylo",
+    "category": "official"
+  },
+  "popularChannels": [
+    {
+      "id": "min_obr",
+      "name": "Министерство образования",
+      "icon": "🏛️",
+      "subscribers": 35000,
+      "deepLink": "max://user/min_obr_astrakhan",
+      "category": "ministries"
+    },
+    {
+      "id": "min_health",
+      "name": "Министерство здравоохранения",
+      "icon": "🏥",
+      "subscribers": 32000,
+      "deepLink": "max://user/min_health_ast",
+      "category": "health"
+    },
+    {
+      "id": "min_social",
+      "name": "Министерство соцзащиты",
+      "icon": "👥",
+      "subscribers": 28000,
+      "deepLink": "max://user/min_social_ast",
+      "category": "ministries"
+    },
+    {
+      "id": "mfc",
+      "name": "МФЦ",
+      "icon": "👨‍💼",
+      "subscribers": 25000,
+      "deepLink": "max://user/mfc_astrakhan",
+      "category": "mfc"
+    }
+  ],
+  "categories": [
+    { "id": "health", "title": "Здравоохранение", "icon": "🏥", "large": false },
+    { "id": "education", "title": "Образование", "icon": "", "large": false },
+    { "id": "housing", "title": "ЖКХ", "icon": "🏠", "large": false },
+    { "id": "mfc", "title": "МФЦ", "icon": "‍💼", "large": false },
+    { "id": "media", "title": "СМИ", "icon": "📰", "large": false },
+    { "id": "safety", "title": "Безопасность", "icon": "🛡️", "large": false },
+    { "id": "fuel", "title": "Топливо", "icon": "", "large": true },
+    { "id": "other", "title": "Остальные ресурсы", "icon": "📋", "large": true }
+  ],
+  "organizations": {
+    "health": [
+      { "id": "hospital_1", "name": "Городская больница №1", "icon": "", "deepLink": "max://user/hospital_1", "category": "Здравоохранение" },
+      { "id": "polyclinic", "name": "Поликлиника", "icon": "👨‍⚕️", "deepLink": "max://user/polyclinic", "category": "Здравоохранение" }
+    ],
+    "education": [
+      { "id": "school_1", "name": "Школа №1", "icon": "", "deepLink": "max://user/school_1", "category": "Образование" },
+      { "id": "kindergarten", "name": "Детский сад", "icon": "", "deepLink": "max://user/kindergarten", "category": "Образование" }
+    ],
+    "housing": [
+      { "id": "vodokanal", "name": "Водоканал", "icon": "💧", "deepLink": "max://user/vodokanal", "category": "ЖКХ" },
+      { "id": "teploseti", "name": "Тепловые сети", "icon": "🔥", "deepLink": "max://user/teploseti", "category": "ЖКХ" }
+    ],
+    "mfc": [
+      { "id": "mfc_main", "name": "МФЦ Центральный", "icon": "🏢", "deepLink": "max://user/mfc_main", "category": "МФЦ" }
+    ],
+    "media": [
+      { "id": "tv_channel", "name": "Региональное ТВ", "icon": "📺", "deepLink": "max://user/tv_channel", "category": "СМИ" },
+      { "id": "radio", "name": "Региональное радио", "icon": "", "deepLink": "max://user/radio", "category": "СМИ" }
+    ],
+    "safety": [
+      { "id": "mvd", "name": "МВД", "icon": "🚔", "deepLink": "max://user/mvd", "category": "Безопасность" },
+      { "id": "mchs", "name": "МЧС", "icon": "🚒", "deepLink": "max://user/mchs", "category": "Безопасность" }
+    ],
+    "fuel": [
+      { "id": "gas_station_1", "name": "АЗС №1", "icon": "⛽", "deepLink": "max://user/gas_station_1", "category": "Топливо" }
+    ],
+    "other": [
+      { "id": "library", "name": "Библиотека", "icon": "📚", "deepLink": "max://user/library", "category": "Остальное" }
+    ]
+  }
+}
