@@ -24,12 +24,13 @@ deploy/Caddyfile     HTTPS reverse proxy
 
 ## Запуск на сервере
 
-1. Укажите в DNS A-запись домена на IP сервера.
+1. Укажите в DNS A-запись `max.rsocit.ru` → `78.110.151.227` (статический IP сервера).
+   Проверка: `dig +short max.rsocit.ru` должен вернуть этот IP.
 2. Установите Docker с плагином Compose. Откройте порты 80 и 443.
 3. Настройте окружение:
    ```sh
    cp .env.example .env
-   # заполните DOMAIN, ACME_EMAIL, BOT_TOKEN, при необходимости ADMIN_TOKEN
+   # DOMAIN уже max.rsocit.ru; заполните ACME_EMAIL, BOT_TOKEN, при необходимости ADMIN_TOKEN
    ```
 4. Запустите:
    ```sh
@@ -37,7 +38,7 @@ deploy/Caddyfile     HTTPS reverse proxy
    ```
    При первом старте база создаётся и заполняется из `seed/`.
 5. В настройках бота на платформе MAX для партнёров укажите адрес мини-приложения
-   `https://<DOMAIN>/`.
+   `https://max.rsocit.ru/`.
 
 Обновление после изменений в репозитории: `git pull && docker compose up -d --build`.
 Данные лежат в томе `app-data`, обновление их не трогает.
@@ -131,7 +132,7 @@ docker compose restart app                              # перечитать �
 Включается, если задан `ADMIN_TOKEN`. Изменения сразу видны в приложении, перезапуск не нужен.
 
 ```sh
-T="Authorization: Bearer $ADMIN_TOKEN"; H=https://<DOMAIN>
+T="Authorization: Bearer $ADMIN_TOKEN"; H=https://max.rsocit.ru
 
 curl -H "$T" $H/api/admin/stats                       # пользователи, запуски, активность
 curl -H "$T" $H/api/admin/catalog > catalog.json      # выгрузить каталог

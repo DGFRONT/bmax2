@@ -387,9 +387,9 @@
     {
       "id": "comgochs",
       "name": "Комитет по делам гражданской обороны и чрезвычайным ситуациям РСО-Алания",
-      "url": "https://max.ru/id1515900188_gos",
+      "url": "https://max.ru/id1500022822_gos",
       "icon": "🚨",
-      "avatar": "mchs.jpg",
+      "avatar": "",
       "group": "Комитеты",
       "categories": [
         "government"
@@ -1595,19 +1595,8 @@
       ]
     },
     {
-      "id": "gazeta_vladikavkaz",
-      "name": "Газета \"Владикавказ\"",
-      "url": "https://max.ru/id1502025836_gos",
-      "icon": "📰",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
       "id": "sever_osetia",
-      "name": "Республиканская газета \"Северная Осетия\"",
+      "name": "Газета «Северная Осетия»",
       "url": "https://max.ru/id1501006809_gos",
       "icon": "📰",
       "avatar": "",
@@ -1617,19 +1606,8 @@
       ]
     },
     {
-      "id": "ruhs",
-      "name": "Газета \"РУХС\"",
-      "url": "https://max.ru/id1500019347_gos",
-      "icon": "📰",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
       "id": "rastdzinad",
-      "name": "Газета \"Растдзинад\"",
+      "name": "Газета «Растдзинад»",
       "url": "https://max.ru/id1504031916_gos",
       "icon": "📰",
       "avatar": "",
@@ -1640,64 +1618,9 @@
     },
     {
       "id": "slovo",
-      "name": "Газета \"Слово\"",
+      "name": "Газета «Слово»",
       "url": "https://max.ru/id1504015103_gos",
       "icon": "",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "razma",
-      "name": "Газета \"Размæ/Вперед\"",
-      "url": "https://max.ru/id1500019516_gos",
-      "icon": "📰",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "fidiuag",
-      "name": "Газета \"Фидиуӕг\" (\"Глашатай\") Пригородного района РСО-А",
-      "url": "https://max.ru/id1512015925_gos",
-      "icon": "📰",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "iraf_gaz",
-      "name": "Газета \"Ираф\"",
-      "url": "https://max.ru/id1508002095_gos",
-      "icon": "📰",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "zhizn_pravoberezhya",
-      "name": "Редакция газеты \"Жизнь Правобережья\"",
-      "url": "https://max.ru/id1500019805_gos",
-      "icon": "",
-      "avatar": "",
-      "group": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "digoria_news",
-      "name": "Digoria NEWS",
-      "url": "https://max.ru/id1500017854_gos",
-      "icon": "📡",
       "avatar": "",
       "group": "",
       "categories": [
@@ -1717,7 +1640,7 @@
     },
     {
       "id": "mah_dug",
-      "name": "Журнал \"Мах дуг\"",
+      "name": "Журнал «Мах дуг»",
       "url": "https://max.ru/id1502008950_gos",
       "icon": "📖",
       "avatar": "",
@@ -1812,6 +1735,50 @@
       "group": "",
       "categories": [
         "selfgov"
+      ]
+    },
+    {
+      "id": "mintrud",
+      "name": "Министерство труда и социального развития РСО-Алания",
+      "url": "https://max.ru/mintrud_15",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comtransport",
+      "name": "Комитет по транспорту РСО-Алания",
+      "url": "https://max.ru/id1500027796_gos",
+      "icon": "🚌",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "ggau",
+      "name": "Горский государственный аграрный университет",
+      "url": "https://max.ru/id1503014227_biz",
+      "icon": "🎓",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "universities"
+      ]
+    },
+    {
+      "id": "nogdzau",
+      "name": "Газета «Ног Дзау»",
+      "url": "https://max.ru/id1501003290_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
       ]
     }
   ],
