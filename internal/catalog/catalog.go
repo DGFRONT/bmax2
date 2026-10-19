@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"net/url"
 	"regexp"
+	"slices"
 	"strings"
 	"unicode/utf8"
 )
@@ -25,6 +26,12 @@ type Category struct {
 	Icon  string `json:"icon"`
 	// Wide categories span the full row of the grid.
 	Wide bool `json:"wide"`
+	// Link, when set, is the ID of an organization the tile opens directly
+	// instead of showing a list.
+	Link string `json:"link"`
+	// Groups are ordered subheadings of the category list; organizations
+	// choose one with their Group field.
+	Groups []string `json:"groups"`
 }
 
 type Organization struct {
@@ -36,13 +43,16 @@ type Organization struct {
 	Icon string `json:"icon"`
 	// Avatar is the name of an uploaded media file, empty for none.
 	Avatar string `json:"avatar"`
+	// Group is the subheading the organization is listed under in categories
+	// that define it in Groups.
+	Group string `json:"group"`
 	// Categories lists category IDs; the first one is shown as the subtitle.
 	Categories []string `json:"categories"`
 }
 
 var (
 	idPattern    = regexp.MustCompile(`^[a-z0-9][a-z0-9_-]{0,63}$`)
-	mediaPattern = regexp.MustCompile(`^[a-z0-9][a-z0-9_-]{0,63}\.(jpg|png|webp)$`)
+	mediaPattern = regexp.MustCompile(`^[a-z0-9][a-z0-9_-]{0,63}\.(jpg|png)$`)
 )
 
 // ValidID reports whether s is a valid category or organization ID.
@@ -54,6 +64,10 @@ func ValidMediaName(s string) bool { return mediaPattern.MatchString(s) }
 func (c *Category) Normalize() error {
 	c.Title = strings.TrimSpace(c.Title)
 	c.Icon = strings.TrimSpace(c.Icon)
+	c.Link = strings.TrimSpace(c.Link)
+	if c.Groups == nil {
+		c.Groups = []string{}
+	}
 	switch {
 	case !ValidID(c.ID):
 		return fmt.Errorf("category %q: id must match %s", c.ID, idPattern)
@@ -61,6 +75,19 @@ func (c *Category) Normalize() error {
 		return fmt.Errorf("category %q: title must be 1-120 characters", c.ID)
 	case utf8.RuneCountInString(c.Icon) > 16:
 		return fmt.Errorf("category %q: icon is too long", c.ID)
+	case c.Link != "" && !ValidID(c.Link):
+		return fmt.Errorf("category %q: link must be an organization id", c.ID)
+	case c.Link != "" && len(c.Groups) > 0:
+		return fmt.Errorf("category %q: a link tile cannot have groups", c.ID)
+	}
+	seen := make(map[string]bool, len(c.Groups))
+	for i, g := range c.Groups {
+		g = strings.TrimSpace(g)
+		if g == "" || utf8.RuneCountInString(g) > 80 || seen[g] {
+			return fmt.Errorf("category %q: groups must be unique, 1-80 characters", c.ID)
+		}
+		seen[g] = true
+		c.Groups[i] = g
 	}
 	return nil
 }
@@ -69,6 +96,7 @@ func (o *Organization) Normalize() error {
 	o.Name = strings.TrimSpace(o.Name)
 	o.URL = strings.TrimSpace(o.URL)
 	o.Icon = strings.TrimSpace(o.Icon)
+	o.Group = strings.TrimSpace(o.Group)
 	if o.Categories == nil {
 		o.Categories = []string{}
 	}
@@ -79,6 +107,8 @@ func (o *Organization) Normalize() error {
 		return fmt.Errorf("organization %q: name must be 1-200 characters", o.ID)
 	case utf8.RuneCountInString(o.Icon) > 16:
 		return fmt.Errorf("organization %q: icon is too long", o.ID)
+	case utf8.RuneCountInString(o.Group) > 80:
+		return fmt.Errorf("organization %q: group is too long", o.ID)
 	case o.Avatar != "" && !ValidMediaName(o.Avatar):
 		return fmt.Errorf("organization %q: invalid avatar name %q", o.ID, o.Avatar)
 	}
@@ -105,16 +135,16 @@ func checkURL(raw string) error {
 
 // Validate normalizes every entry and checks cross references.
 func (d *Document) Validate() error {
-	cats := make(map[string]bool, len(d.Categories))
+	cats := make(map[string]*Category, len(d.Categories))
 	for i := range d.Categories {
 		c := &d.Categories[i]
 		if err := c.Normalize(); err != nil {
 			return err
 		}
-		if cats[c.ID] {
+		if cats[c.ID] != nil {
 			return fmt.Errorf("category %q is duplicated", c.ID)
 		}
-		cats[c.ID] = true
+		cats[c.ID] = c
 	}
 
 	orgs := make(map[string]bool, len(d.Organizations))
@@ -132,10 +162,22 @@ func (d *Document) Validate() error {
 			return fmt.Errorf("organizations %q and %q share url %s", other, o.ID, o.URL)
 		}
 		urls[o.URL] = o.ID
+		groupOK := o.Group == ""
 		for _, c := range o.Categories {
-			if !cats[c] {
+			cat := cats[c]
+			if cat == nil {
 				return fmt.Errorf("organization %q: unknown category %q", o.ID, c)
 			}
+			groupOK = groupOK || slices.Contains(cat.Groups, o.Group)
+		}
+		if !groupOK {
+			return fmt.Errorf("organization %q: group %q is not defined in its categories", o.ID, o.Group)
+		}
+	}
+
+	for _, c := range d.Categories {
+		if c.Link != "" && !orgs[c.Link] {
+			return fmt.Errorf("category %q: link to unknown organization %q", c.ID, c.Link)
 		}
 	}
 

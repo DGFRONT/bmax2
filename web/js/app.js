@@ -54,7 +54,9 @@ function openOrg(org) {
     max.openUrl(org.url);
 }
 
-function orgItem(org) {
+// orgItem renders a list row; the subtitle names the organization's category
+// and is left out inside a category, where it would repeat the title.
+function orgItem(org, withSubtitle = true) {
     return el('div', {
         class: 'org-item',
         role: 'button',
@@ -66,7 +68,7 @@ function orgItem(org) {
         el('div', { class: 'org-icon' }, avatarOrIcon(org, 'org-avatar', 'org-emoji')),
         el('div', { class: 'org-info' },
             el('div', { class: 'org-name', text: org.name }),
-            org.subtitle && el('div', { class: 'org-category', text: org.subtitle }),
+            withSubtitle && org.subtitle && el('div', { class: 'org-category', text: org.subtitle }),
         ),
     );
 }
@@ -98,21 +100,38 @@ function renderCategories() {
         class: cat.wide ? 'category-card large' : 'category-card',
         role: 'button',
         tabIndex: 0,
-        onclick: () => navigate('category', { id: cat.id }),
-        onkeydown: (e) => e.key === 'Enter' && navigate('category', { id: cat.id }),
+        onclick: () => openCategory(cat),
+        onkeydown: (e) => e.key === 'Enter' && openCategory(cat),
     },
         el('div', { class: 'category-icon', text: cat.icon || '📁' }),
         el('span', { class: 'category-title', text: cat.title }),
     )));
 }
 
+// Link tiles open their organization directly; others show the list.
+function openCategory(cat) {
+    const target = cat.link && state.orgs.get(cat.link);
+    if (target) openOrg(target);
+    else navigate('category', { id: cat.id });
+}
+
+const orgsByIds = (ids) => ids.map((id) => state.orgs.get(id)).filter(Boolean);
+
 function renderCategoryScreen({ id, highlight }) {
     const cat = state.categories.get(id);
     $('categoryTitle').textContent = cat?.title || '';
-    const orgs = (cat?.organizations || []).map((oid) => state.orgs.get(oid)).filter(Boolean);
     const list = $('organizationsList');
-    list.replaceChildren(...(orgs.length
-        ? orgs.map(orgItem)
+    let content;
+    if (cat?.sections?.length) {
+        content = cat.sections.flatMap((section) => [
+            section.title && el('h2', { class: 'list-section-title', text: section.title }),
+            ...orgsByIds(section.organizations).map((org) => orgItem(org, false)),
+        ]).filter(Boolean);
+    } else {
+        content = orgsByIds(cat?.organizations || []).map((org) => orgItem(org, false));
+    }
+    list.replaceChildren(...(content.length
+        ? content
         : [emptyState('В этой категории пока нет организаций')]));
     list.parentElement.scrollTop = 0;
 
@@ -146,7 +165,7 @@ function renderAllOrgScreen() {
     $('allOrgList').replaceChildren(...letters.filter((l) => groups.has(l)).map((letter) =>
         el('div', { class: 'letter-group', id: `letter-${letter}` },
             el('div', { class: 'letter-header', text: letter }),
-            ...groups.get(letter).map(orgItem),
+            ...groups.get(letter).map((org) => orgItem(org)),
         )));
 }
 
@@ -226,10 +245,11 @@ function back() {
 // and startapp=org_<id> (channel_<id> kept for old links).
 function applyStartParam(param) {
     const [, kind, id] = param.match(/^(category|org|channel)_(.+)$/) || [];
-    if (kind === 'category' && state.categories.has(id)) {
+    // Links can only be opened from a tap, so link tiles are not deep-linked.
+    if (kind === 'category' && state.categories.has(id) && !state.categories.get(id).link) {
         navigate('category', { id });
     } else if (kind && state.orgs.has(id)) {
-        const catId = state.catalog.categories.find((c) => c.organizations.includes(id))?.id;
+        const catId = state.catalog.categories.find((c) => !c.link && c.organizations.includes(id))?.id;
         if (catId) navigate('category', { id: catId, highlight: id });
     }
 }

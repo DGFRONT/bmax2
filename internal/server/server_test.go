@@ -96,7 +96,12 @@ type publicCatalogResp struct {
 	Featured   []string `json:"featured"`
 	Categories []struct {
 		ID            string   `json:"id"`
+		Link          string   `json:"link"`
 		Organizations []string `json:"organizations"`
+		Sections      []struct {
+			Title         string   `json:"title"`
+			Organizations []string `json:"organizations"`
+		} `json:"sections"`
 	} `json:"categories"`
 	Organizations []struct {
 		ID       string `json:"id"`
@@ -128,11 +133,25 @@ func TestPublicAPI(t *testing.T) {
 	}
 
 	c := getCatalog(t, ts.URL)
-	if len(c.Featured) == 0 || c.Featured[0] != "governor" {
+	if strings.Join(c.Featured, ",") != "governor,gov,parlament,mfc" {
 		t.Fatalf("featured = %v", c.Featured)
 	}
-	if len(c.Organizations) < 600 || len(c.Categories) != 16 {
+	if len(c.Organizations) < 100 || len(c.Categories) != 15 {
 		t.Fatalf("got %d organizations, %d categories", len(c.Organizations), len(c.Categories))
+	}
+	if c.Categories[0].ID != "fuel" || c.Categories[0].Link != "eirc_fuel" {
+		t.Fatalf("first category = %+v", c.Categories[0])
+	}
+	var titles []string
+	for _, cat := range c.Categories {
+		if cat.ID == "government" {
+			for _, s := range cat.Sections {
+				titles = append(titles, s.Title)
+			}
+		}
+	}
+	if strings.Join(titles, "|") != "Министерства|Комитеты|Службы и управления" {
+		t.Fatalf("government sections = %v", titles)
 	}
 	var avatar string
 	for _, o := range c.Organizations {
@@ -227,6 +246,15 @@ func TestAdminAPI(t *testing.T) {
 		t.Fatalf("unknown category: status %d", resp.StatusCode)
 	}
 
+	badGroup := `{"name":"Г","url":"https://max.ru/g1","group":"Министерства","categories":["health"]}`
+	if resp := do(t, "PUT", ts.URL+"/api/admin/organizations/g1", strings.NewReader(badGroup), auth); resp.StatusCode != http.StatusBadRequest {
+		t.Fatalf("group outside category: status %d", resp.StatusCode)
+	}
+	goodGroup := `{"name":"Г","url":"https://max.ru/g1","group":"Министерства","categories":["government"]}`
+	if resp := do(t, "PUT", ts.URL+"/api/admin/organizations/g1", strings.NewReader(goodGroup), auth); resp.StatusCode != http.StatusOK {
+		t.Fatalf("group in category: status %d", resp.StatusCode)
+	}
+
 	if resp := do(t, "PUT", ts.URL+"/api/admin/featured", strings.NewReader(`["new_org","governor"]`), auth); resp.StatusCode != http.StatusOK {
 		t.Fatalf("featured: status %d", resp.StatusCode)
 	}
@@ -249,11 +277,11 @@ func TestAdminAPI(t *testing.T) {
 		t.Fatalf("reimport: status %d: %s", resp.StatusCode, body)
 	}
 
-	cat := `{"title":"Транспорт","icon":"🚌","wide":false}`
-	if resp := do(t, "PUT", ts.URL+"/api/admin/categories/transport", strings.NewReader(cat), auth); resp.StatusCode != http.StatusOK {
+	cat := `{"title":"Парковки","icon":"🅿️","wide":false}`
+	if resp := do(t, "PUT", ts.URL+"/api/admin/categories/parking", strings.NewReader(cat), auth); resp.StatusCode != http.StatusOK {
 		t.Fatalf("put category: status %d", resp.StatusCode)
 	}
-	if c := getCatalog(t, ts.URL); c.Categories[len(c.Categories)-1].ID != "transport" {
+	if c := getCatalog(t, ts.URL); c.Categories[len(c.Categories)-1].ID != "parking" {
 		t.Fatal("new category is not last")
 	}
 }

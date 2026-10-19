@@ -3,6 +3,10 @@ CREATE TABLE categories (
     title      TEXT    NOT NULL,
     icon       TEXT    NOT NULL DEFAULT '',
     wide       INTEGER NOT NULL DEFAULT 0 CHECK (wide IN (0, 1)),
+    -- Organization the tile opens directly instead of showing a list.
+    link       TEXT REFERENCES organizations (id) ON DELETE SET NULL,
+    -- JSON array of ordered subheadings for the organization list.
+    group_titles TEXT  NOT NULL DEFAULT '[]' CHECK (json_valid(group_titles)),
     position   INTEGER NOT NULL,
     updated_at TEXT    NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now'))
 );
@@ -21,6 +25,7 @@ CREATE TABLE organizations (
     url        TEXT NOT NULL UNIQUE,
     icon       TEXT NOT NULL DEFAULT '',
     avatar     TEXT REFERENCES media (name) ON UPDATE CASCADE ON DELETE SET NULL,
+    group_name TEXT NOT NULL DEFAULT '',
     updated_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now'))
 );
 

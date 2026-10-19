@@ -10,6 +10,7 @@ import (
 	"path/filepath"
 
 	"github.com/dgfront/bmax2/internal/catalog"
+	"github.com/dgfront/bmax2/internal/media"
 )
 
 // A catalog directory holds catalog.json and a media/ folder with the files
@@ -19,21 +20,10 @@ const (
 	mediaDir    = "media"
 )
 
-// MediaContentType returns the content type for an allowed media name.
-func MediaContentType(name string) string {
-	switch filepath.Ext(name) {
-	case ".jpg":
-		return "image/jpeg"
-	case ".png":
-		return "image/png"
-	case ".webp":
-		return "image/webp"
-	}
-	return ""
-}
-
 // ImportDir uploads every media file from dir/media and replaces the catalog
-// with dir/catalog.json.
+// with dir/catalog.json. Images are cropped and scaled to avatar size. An
+// organization without an avatar gets media/<organization id>.jpg (or .png)
+// when such a file exists.
 func (s *Store) ImportDir(ctx context.Context, dir string) error {
 	raw, err := os.ReadFile(filepath.Join(dir, catalogFile))
 	if err != nil {
@@ -48,20 +38,33 @@ func (s *Store) ImportDir(ctx context.Context, dir string) error {
 	if err != nil && !errors.Is(err, fs.ErrNotExist) {
 		return err
 	}
+	files := make(map[string]bool, len(entries))
 	for _, e := range entries {
 		if e.IsDir() {
 			continue
 		}
 		name := e.Name()
 		if !catalog.ValidMediaName(name) {
-			return fmt.Errorf("media/%s: name must be lowercase latin with .jpg, .png or .webp", name)
+			return fmt.Errorf("media/%s: name must be lowercase latin with .jpg or .png", name)
 		}
 		data, err := os.ReadFile(filepath.Join(dir, mediaDir, name))
 		if err != nil {
 			return err
 		}
-		if err := s.PutMedia(ctx, name, MediaContentType(name), data); err != nil {
+		if data, err = media.Prepare(name, data); err != nil {
+			return fmt.Errorf("media/%s: %w", name, err)
+		}
+		if err := s.PutMedia(ctx, name, media.ContentType(name), data); err != nil {
 			return err
+		}
+		files[name] = true
+	}
+	for i := range doc.Organizations {
+		o := &doc.Organizations[i]
+		for _, ext := range []string{".jpg", ".png"} {
+			if o.Avatar == "" && files[o.ID+ext] {
+				o.Avatar = o.ID + ext
+			}
 		}
 	}
 	return s.ReplaceDocument(ctx, doc)

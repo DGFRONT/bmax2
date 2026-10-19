@@ -30,6 +30,8 @@ func TestValidate(t *testing.T) {
 		"unknown featured": func(d *Document) { d.Featured = []string{"zzz"} },
 		"empty title":      func(d *Document) { d.Categories[0].Title = " " },
 		"bad avatar":       func(d *Document) { d.Organizations[0].Avatar = "../etc/passwd" },
+		"unknown link":     func(d *Document) { d.Categories[0].Link = "zzz" },
+		"undefined group":  func(d *Document) { d.Organizations[0].Group = "Министерства" },
 	}
 	for name, mutate := range tests {
 		t.Run(name, func(t *testing.T) {

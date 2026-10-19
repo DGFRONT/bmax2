@@ -3,8 +3,10 @@ package store
 import (
 	"context"
 	"database/sql"
+	"encoding/json"
 	"errors"
 	"fmt"
+	"slices"
 
 	"github.com/dgfront/bmax2/internal/catalog"
 )
@@ -26,15 +28,20 @@ func (s *Store) LoadDocument(ctx context.Context) (catalog.Document, error) {
 	}
 
 	rows, err := s.db.QueryContext(ctx,
-		`SELECT id, title, icon, wide FROM categories ORDER BY position, id`)
+		`SELECT id, title, icon, wide, COALESCE(link, ''), group_titles FROM categories ORDER BY position, id`)
 	if err != nil {
 		return doc, err
 	}
 	for rows.Next() {
 		var c catalog.Category
-		if err := rows.Scan(&c.ID, &c.Title, &c.Icon, &c.Wide); err != nil {
+		var groups string
+		if err := rows.Scan(&c.ID, &c.Title, &c.Icon, &c.Wide, &c.Link, &groups); err != nil {
 			rows.Close()
 			return doc, err
+		}
+		if err := json.Unmarshal([]byte(groups), &c.Groups); err != nil {
+			rows.Close()
+			return doc, fmt.Errorf("category %q groups: %w", c.ID, err)
 		}
 		doc.Categories = append(doc.Categories, c)
 	}
@@ -44,14 +51,14 @@ func (s *Store) LoadDocument(ctx context.Context) (catalog.Document, error) {
 	}
 
 	rows, err = s.db.QueryContext(ctx,
-		`SELECT id, name, url, icon, COALESCE(avatar, '') FROM organizations ORDER BY id`)
+		`SELECT id, name, url, icon, COALESCE(avatar, ''), group_name FROM organizations ORDER BY id`)
 	if err != nil {
 		return doc, err
 	}
 	index := make(map[string]int)
 	for rows.Next() {
 		o := catalog.Organization{Categories: []string{}}
-		if err := rows.Scan(&o.ID, &o.Name, &o.URL, &o.Icon, &o.Avatar); err != nil {
+		if err := rows.Scan(&o.ID, &o.Name, &o.URL, &o.Icon, &o.Avatar, &o.Group); err != nil {
 			rows.Close()
 			return doc, err
 		}
@@ -114,13 +121,25 @@ func (s *Store) ReplaceDocument(ctx context.Context, doc catalog.Document) error
 				return err
 			}
 		}
+		// Links point at organizations, so they are set once those exist.
 		for i, c := range doc.Categories {
+			link := c.Link
+			c.Link = ""
 			if err := putCategory(ctx, tx, c, i); err != nil {
 				return err
 			}
+			doc.Categories[i].Link = link
 		}
 		for _, o := range doc.Organizations {
 			if err := putOrganization(ctx, tx, o); err != nil {
+				return err
+			}
+		}
+		for _, c := range doc.Categories {
+			if c.Link == "" {
+				continue
+			}
+			if _, err := tx.ExecContext(ctx, `UPDATE categories SET link = ? WHERE id = ?`, c.Link, c.ID); err != nil {
 				return err
 			}
 		}
@@ -134,6 +153,11 @@ func (s *Store) PutCategory(ctx context.Context, c catalog.Category) error {
 		return fmt.Errorf("%w: %v", ErrInvalid, err)
 	}
 	return s.tx(ctx, func(tx *sql.Tx) error {
+		if c.Link != "" {
+			if err := mustExist(ctx, tx, `SELECT 1 FROM organizations WHERE id = ?`, c.Link, "link: unknown organization %q"); err != nil {
+				return err
+			}
+		}
 		var pos int
 		err := tx.QueryRowContext(ctx, `SELECT position FROM categories WHERE id = ?`, c.ID).Scan(&pos)
 		if errors.Is(err, sql.ErrNoRows) {
@@ -192,10 +216,24 @@ func (s *Store) PutOrganization(ctx context.Context, o catalog.Organization) err
 		if !errors.Is(err, sql.ErrNoRows) {
 			return err
 		}
+		groupOK := o.Group == ""
 		for _, c := range o.Categories {
-			if err := mustExist(ctx, tx, `SELECT 1 FROM categories WHERE id = ?`, c, "unknown category %q"); err != nil {
+			var groups string
+			err := tx.QueryRowContext(ctx, `SELECT group_titles FROM categories WHERE id = ?`, c).Scan(&groups)
+			if errors.Is(err, sql.ErrNoRows) {
+				return fmt.Errorf("%w: unknown category %q", ErrInvalid, c)
+			}
+			if err != nil {
 				return err
 			}
+			var list []string
+			if err := json.Unmarshal([]byte(groups), &list); err != nil {
+				return err
+			}
+			groupOK = groupOK || slices.Contains(list, o.Group)
+		}
+		if !groupOK {
+			return fmt.Errorf("%w: group %q is not defined in the organization's categories", ErrInvalid, o.Group)
 		}
 		if _, err := tx.ExecContext(ctx,
 			`DELETE FROM organization_categories WHERE organization_id = ?`, o.ID); err != nil {
@@ -231,13 +269,21 @@ func (s *Store) deleteByID(ctx context.Context, query, id string) error {
 }
 
 func putCategory(ctx context.Context, tx *sql.Tx, c catalog.Category, pos int) error {
-	_, err := tx.ExecContext(ctx, `
-		INSERT INTO categories (id, title, icon, wide, position) VALUES (?, ?, ?, ?, ?)
+	groups, err := json.Marshal(c.Groups)
+	if err != nil {
+		return err
+	}
+	var link any
+	if c.Link != "" {
+		link = c.Link
+	}
+	_, err = tx.ExecContext(ctx, `
+		INSERT INTO categories (id, title, icon, wide, link, group_titles, position) VALUES (?, ?, ?, ?, ?, ?, ?)
 		ON CONFLICT (id) DO UPDATE SET
 			title = excluded.title, icon = excluded.icon, wide = excluded.wide,
-			position = excluded.position,
+			link = excluded.link, group_titles = excluded.group_titles, position = excluded.position,
 			updated_at = strftime('%Y-%m-%dT%H:%M:%SZ', 'now')`,
-		c.ID, c.Title, c.Icon, c.Wide, pos)
+		c.ID, c.Title, c.Icon, c.Wide, link, string(groups), pos)
 	return err
 }
 
@@ -250,12 +296,12 @@ func putOrganization(ctx context.Context, tx *sql.Tx, o catalog.Organization) er
 		avatar = o.Avatar
 	}
 	_, err := tx.ExecContext(ctx, `
-		INSERT INTO organizations (id, name, url, icon, avatar) VALUES (?, ?, ?, ?, ?)
+		INSERT INTO organizations (id, name, url, icon, avatar, group_name) VALUES (?, ?, ?, ?, ?, ?)
 		ON CONFLICT (id) DO UPDATE SET
 			name = excluded.name, url = excluded.url, icon = excluded.icon,
-			avatar = excluded.avatar,
+			avatar = excluded.avatar, group_name = excluded.group_name,
 			updated_at = strftime('%Y-%m-%dT%H:%M:%SZ', 'now')`,
-		o.ID, o.Name, o.URL, o.Icon, avatar)
+		o.ID, o.Name, o.URL, o.Icon, avatar, o.Group)
 	if err != nil {
 		return err
 	}

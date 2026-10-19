@@ -445,6 +445,21 @@ body {
     color: var(--text-secondary);
 }
 
+/* Подзаголовки внутри категории */
+.list-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 12px;
+    padding-left: 4px;
+}
+
+.list-section-title:first-child {
+    margin-top: 0;
+}
+
 /* Алфавитный указатель */
 .alphabet-nav {
     display: flex;

@@ -4,6 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
+	"slices"
 	"sort"
 	"strings"
 	"unicode"
@@ -25,10 +26,20 @@ type publicCatalog struct {
 }
 
 type publicCategory struct {
-	ID            string   `json:"id"`
+	ID    string `json:"id"`
+	Title string `json:"title"`
+	Icon  string `json:"icon"`
+	Wide  bool   `json:"wide"`
+	// Link is the organization the tile opens directly, if any.
+	Link          string   `json:"link,omitempty"`
+	Organizations []string `json:"organizations"`
+	// Sections splits Organizations under subheadings when the category
+	// defines groups; organizations without a group come last, untitled.
+	Sections []publicSection `json:"sections,omitempty"`
+}
+
+type publicSection struct {
 	Title         string   `json:"title"`
-	Icon          string   `json:"icon"`
-	Wide          bool     `json:"wide"`
 	Organizations []string `json:"organizations"`
 }
 
@@ -74,7 +85,9 @@ func BuildSnapshot(doc Document, mediaVersions map[string]string) (*Snapshot, er
 		rank[o.ID] = i
 	}
 	members := make(map[string][]string, len(doc.Categories))
+	groupOf := make(map[string]string, len(doc.Organizations))
 	for _, o := range doc.Organizations {
+		groupOf[o.ID] = o.Group
 		for _, c := range o.Categories {
 			members[c] = append(members[c], o.ID)
 		}
@@ -87,7 +100,10 @@ func BuildSnapshot(doc Document, mediaVersions map[string]string) (*Snapshot, er
 			ids = []string{}
 		}
 		sort.Slice(ids, func(a, b int) bool { return rank[ids[a]] < rank[ids[b]] })
-		cats[i] = publicCategory{ID: c.ID, Title: c.Title, Icon: c.Icon, Wide: c.Wide, Organizations: ids}
+		cats[i] = publicCategory{
+			ID: c.ID, Title: c.Title, Icon: c.Icon, Wide: c.Wide, Link: c.Link,
+			Organizations: ids, Sections: sections(c.Groups, ids, groupOf),
+		}
 	}
 
 	featured := doc.Featured
@@ -105,4 +121,30 @@ func BuildSnapshot(doc Document, mediaVersions map[string]string) (*Snapshot, er
 // sortKey drops leading quotes and symbols so «Name» sorts under N.
 func sortKey(name string) string {
 	return strings.TrimLeftFunc(name, func(r rune) bool { return !unicode.IsLetter(r) && !unicode.IsDigit(r) })
+}
+
+// sections groups ids (already sorted) by the category's ordered groups.
+func sections(groups, ids []string, groupOf map[string]string) []publicSection {
+	if len(groups) == 0 {
+		return nil
+	}
+	byGroup := make(map[string][]string, len(groups))
+	var rest []string
+	for _, id := range ids {
+		if g := groupOf[id]; slices.Contains(groups, g) {
+			byGroup[g] = append(byGroup[g], id)
+		} else {
+			rest = append(rest, id)
+		}
+	}
+	out := make([]publicSection, 0, len(groups)+1)
+	for _, g := range groups {
+		if len(byGroup[g]) > 0 {
+			out = append(out, publicSection{Title: g, Organizations: byGroup[g]})
+		}
+	}
+	if len(rest) > 0 {
+		out = append(out, publicSection{Organizations: rest})
+	}
+	return out
 }

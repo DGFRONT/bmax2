@@ -9,12 +9,12 @@ import (
 	"strings"
 
 	"github.com/dgfront/bmax2/internal/catalog"
-	"github.com/dgfront/bmax2/internal/store"
+	"github.com/dgfront/bmax2/internal/media"
 )
 
 const (
 	maxJSONBody  = 4 << 20
-	maxMediaBody = 2 << 20
+	maxMediaBody = 10 << 20
 )
 
 func (s *Server) routeAdmin(mux *http.ServeMux) {
@@ -157,25 +157,26 @@ func (s *Server) adminPutFeatured(w http.ResponseWriter, r *http.Request) {
 func (s *Server) adminPutMedia(w http.ResponseWriter, r *http.Request) {
 	name := r.PathValue("name")
 	if !catalog.ValidMediaName(name) {
-		writeError(w, http.StatusBadRequest, "name must be lowercase latin with .jpg, .png or .webp")
+		writeError(w, http.StatusBadRequest, "name must be lowercase latin with .jpg or .png")
 		return
 	}
 	data, err := io.ReadAll(http.MaxBytesReader(w, r.Body, maxMediaBody))
 	var tooLarge *http.MaxBytesError
 	if errors.As(err, &tooLarge) {
-		writeError(w, http.StatusRequestEntityTooLarge, "file is larger than 2 MB")
+		writeError(w, http.StatusRequestEntityTooLarge, "file is larger than 10 MB")
 		return
 	}
 	if err != nil {
 		writeError(w, http.StatusBadRequest, "cannot read body")
 		return
 	}
-	want := store.MediaContentType(name)
-	if got := http.DetectContentType(data); got != want {
-		writeError(w, http.StatusBadRequest, "file content is "+got+", expected "+want)
+	if data, err = media.Prepare(name, data); err != nil {
+		writeError(w, http.StatusBadRequest, err.Error())
 		return
 	}
-	s.mutate(w, r, http.StatusOK, func() error { return s.store.PutMedia(r.Context(), name, want, data) })
+	s.mutate(w, r, http.StatusOK, func() error {
+		return s.store.PutMedia(r.Context(), name, media.ContentType(name), data)
+	})
 }
 
 func (s *Server) adminDeleteMedia(w http.ResponseWriter, r *http.Request) {

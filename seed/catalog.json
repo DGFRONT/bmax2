@@ -1,100 +1,128 @@
 {
   "categories": [
     {
+      "id": "fuel",
+      "title": "Карта наличия топлива",
+      "icon": "⛽",
+      "wide": true,
+      "link": "eirc_fuel",
+      "groups": []
+    },
+    {
+      "id": "mfc_bot",
+      "title": "Чат-бот МФЦ",
+      "icon": "👨‍💼",
+      "wide": false,
+      "link": "bot_mfc",
+      "groups": []
+    },
+    {
+      "id": "doctor",
+      "title": "Запись к врачу",
+      "icon": "🩺",
+      "wide": false,
+      "link": "bot_minzdrav",
+      "groups": []
+    },
+    {
       "id": "government",
       "title": "Органы власти РСО-Алания",
       "icon": "🏛️",
-      "wide": true
-    },
-    {
-      "id": "law",
-      "title": "Правоохранительные органы",
-      "icon": "⚖️",
-      "wide": false
-    },
-    {
-      "id": "parliament",
-      "title": "Парламент РСО-Алания",
-      "icon": "🏛️",
-      "wide": false
-    },
-    {
-      "id": "emergency",
-      "title": "Экстренные службы",
-      "icon": "🚨",
-      "wide": false
+      "wide": false,
+      "groups": [
+        "Министерства",
+        "Комитеты",
+        "Службы и управления"
+      ],
+      "link": ""
     },
     {
       "id": "health",
       "title": "Здравоохранение",
       "icon": "🏥",
-      "wide": false
+      "wide": false,
+      "link": "",
+      "groups": []
     },
     {
-      "id": "mfc",
-      "title": "МФЦ",
-      "icon": "👨‍💼",
-      "wide": false
-    },
-    {
-      "id": "education",
-      "title": "Образование и Наука",
+      "id": "universities",
+      "title": "Вузы",
       "icon": "🎓",
-      "wide": false
+      "wide": false,
+      "link": "",
+      "groups": []
     },
     {
-      "id": "sport",
-      "title": "Спорт",
-      "icon": "⚽",
-      "wide": false
+      "id": "colleges",
+      "title": "Колледжи (СПО)",
+      "icon": "📚",
+      "wide": false,
+      "link": "",
+      "groups": []
     },
     {
       "id": "culture",
       "title": "Культура",
       "icon": "🎭",
-      "wide": false
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "sport",
+      "title": "Спорт",
+      "icon": "⚽",
+      "wide": false,
+      "link": "",
+      "groups": []
     },
     {
       "id": "social",
       "title": "Социальная защита",
       "icon": "🤝",
-      "wide": false
-    },
-    {
-      "id": "vodokanal",
-      "title": "ГУП Водоканал РСО-Алания",
-      "icon": "💧",
-      "wide": true
-    },
-    {
-      "id": "fuel",
-      "title": "Топливные карты ЕИРЦ",
-      "icon": "⛽",
-      "wide": true
-    },
-    {
-      "id": "media",
-      "title": "СМИ",
-      "icon": "📰",
-      "wide": true
-    },
-    {
-      "id": "selfgov",
-      "title": "Самоуправления",
-      "icon": "🏘️",
-      "wide": true
+      "wide": false,
+      "link": "",
+      "groups": []
     },
     {
       "id": "bots",
       "title": "Боты региона",
       "icon": "🤖",
-      "wide": true
+      "wide": false,
+      "link": "",
+      "groups": []
     },
     {
-      "id": "other",
-      "title": "Прочее",
-      "icon": "📦",
-      "wide": true
+      "id": "vodokanal",
+      "title": "ГУП «Водоканал» РСО-Алания",
+      "icon": "💧",
+      "wide": true,
+      "link": "vodokanal_bot",
+      "groups": []
+    },
+    {
+      "id": "transport",
+      "title": "Расписание общественного транспорта",
+      "icon": "🚌",
+      "wide": true,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "media",
+      "title": "СМИ",
+      "icon": "📰",
+      "wide": true,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "selfgov",
+      "title": "Местное самоуправление",
+      "icon": "🏘️",
+      "wide": true,
+      "link": "",
+      "groups": []
     }
   ],
   "organizations": [
@@ -104,6 +132,7 @@
       "url": "https://max.ru/sergeimeniaylo",
       "icon": "👤",
       "avatar": "gsm.jpg",
+      "group": "",
       "categories": []
     },
     {
@@ -112,35 +141,17 @@
       "url": "https://max.ru/alania_gov",
       "icon": "🏛️",
       "avatar": "building.jpg",
+      "group": "",
       "categories": []
     },
     {
-      "id": "comdigital",
-      "name": "Комитет цифрового развития РСО-Алания",
-      "url": "https://max.ru/id1513063914_gos",
-      "icon": "💻",
-      "avatar": "prl.jpg",
+      "id": "parlament",
+      "name": "Парламент Республики Северная Осетия-Алания",
+      "url": "https://max.ru/id1502009231_gos",
+      "icon": "🏛️",
+      "avatar": "",
+      "group": "",
       "categories": []
-    },
-    {
-      "id": "mchs",
-      "name": "МЧС Северной Осетии",
-      "url": "https://max.ru/id1515900188_gos",
-      "icon": "🚒",
-      "avatar": "mchs.jpg",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "minzdrav",
-      "name": "Минздрав РСО-Алания",
-      "url": "https://max.ru/minzdravrso",
-      "icon": "🏥",
-      "avatar": "building.jpg",
-      "categories": [
-        "government"
-      ]
     },
     {
       "id": "mfc",
@@ -148,16 +159,62 @@
       "url": "https://max.ru/id1515922174_gos",
       "icon": "👨‍💼",
       "avatar": "mfc.jpg",
+      "group": "",
+      "categories": []
+    },
+    {
+      "id": "eirc_fuel",
+      "name": "Карта наличия топлива ЕИРЦ",
+      "url": "https://eirc15.ru/",
+      "icon": "⛽",
+      "avatar": "",
+      "group": "",
       "categories": [
-        "mfc"
+        "fuel"
       ]
     },
     {
-      "id": "mintrud",
-      "name": "Министерство труда и социального развития РСО-Алания",
-      "url": "https://max.ru/mintrud_15",
-      "icon": "🤝",
+      "id": "bot_mfc",
+      "name": "Чат-бот МФЦ РСО-Алания",
+      "url": "https://max.ru/mfcrsoalania_max_bot",
+      "icon": "🤖",
       "avatar": "",
+      "group": "",
+      "categories": [
+        "bots",
+        "mfc_bot"
+      ]
+    },
+    {
+      "id": "bot_minzdrav",
+      "name": "Запись на приём к врачу (Минздрав РСО-Алания)",
+      "url": "https://max.ru/minzdrav_rso_alania_bot",
+      "icon": "🩺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots",
+        "doctor"
+      ]
+    },
+    {
+      "id": "vodokanal_bot",
+      "name": "ГУП «Водоканал» РСО-Алания",
+      "url": "https://max.ru/gupvodokanal_bot",
+      "icon": "💧",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "vodokanal"
+      ]
+    },
+    {
+      "id": "minimushestvo",
+      "name": "Министерство государственного имущества и земельных отношений РСО-Алания",
+      "url": "https://max.ru/id1502008943_gos",
+      "icon": "🏢",
+      "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -168,6 +225,18 @@
       "url": "https://max.ru/mingkh15",
       "icon": "🏠",
       "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minzdrav",
+      "name": "Министерство здравоохранения РСО-Алания",
+      "url": "https://max.ru/minzdravrso",
+      "icon": "🏥",
+      "avatar": "building.jpg",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -178,6 +247,7 @@
       "url": "https://max.ru/minkultrsoalania15",
       "icon": "🎭",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -188,6 +258,7 @@
       "url": "https://max.ru/minobrnauki15",
       "icon": "📚",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -198,6 +269,7 @@
       "url": "https://max.ru/id1513060134_gos",
       "icon": "🌲",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -208,16 +280,18 @@
       "url": "https://max.ru/id1513063939_gos",
       "icon": "🏭",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
     },
     {
       "id": "minnac",
-      "name": "Министерство по национальной политике и внешним связям",
+      "name": "Министерство по национальной политике и внешним связям РСО-Алания",
       "url": "https://max.ru/id1513035402_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -228,6 +302,7 @@
       "url": "https://max.ru/id1501028753_gos",
       "icon": "🌾",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -238,16 +313,18 @@
       "url": "https://max.ru/id1513057702_gos",
       "icon": "🏗️",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
     },
     {
       "id": "minfiz",
-      "name": "Министерство физической культуры и спорта",
+      "name": "Министерство физической культуры и спорта РСО-Алания",
       "url": "https://max.ru/id1513057815_gos",
       "icon": "⚽",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -258,6 +335,7 @@
       "url": "https://max.ru/id1501007545_gos",
       "icon": "💰",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -268,6 +346,7 @@
       "url": "https://max.ru/id1502023684_gos",
       "icon": "📈",
       "avatar": "",
+      "group": "Министерства",
       "categories": [
         "government"
       ]
@@ -278,6 +357,7 @@
       "url": "https://max.ru/id1515912930_gos",
       "icon": "🛣️",
       "avatar": "",
+      "group": "Комитеты",
       "categories": [
         "government"
       ]
@@ -288,6 +368,7 @@
       "url": "https://max.ru/id1513063921_gos",
       "icon": "📰",
       "avatar": "",
+      "group": "Комитеты",
       "categories": [
         "government"
       ]
@@ -298,6 +379,18 @@
       "url": "https://max.ru/id1513056561_gos",
       "icon": "🛡️",
       "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comgochs",
+      "name": "Комитет по делам гражданской обороны и чрезвычайным ситуациям РСО-Алания",
+      "url": "https://max.ru/id1515900188_gos",
+      "icon": "🚨",
+      "avatar": "mchs.jpg",
+      "group": "Комитеты",
       "categories": [
         "government"
       ]
@@ -308,6 +401,7 @@
       "url": "https://max.ru/id1513057808_gos",
       "icon": "",
       "avatar": "",
+      "group": "Комитеты",
       "categories": [
         "government"
       ]
@@ -318,16 +412,18 @@
       "url": "https://max.ru/id1515910940_gos",
       "icon": "💼",
       "avatar": "",
+      "group": "Комитеты",
       "categories": [
         "government"
       ]
     },
     {
-      "id": "comtransport",
-      "name": "Комитет по транспорту",
-      "url": "https://max.ru/id1500027796_gos",
-      "icon": "",
-      "avatar": "",
+      "id": "comdigital",
+      "name": "Комитет цифрового развития РСО-Алания",
+      "url": "https://max.ru/id1513063914_gos",
+      "icon": "💻",
+      "avatar": "prl.jpg",
+      "group": "Комитеты",
       "categories": [
         "government"
       ]
@@ -338,9 +434,9 @@
       "url": "https://max.ru/id1513003873_gos",
       "icon": "🔍",
       "avatar": "",
+      "group": "Службы и управления",
       "categories": [
-        "government",
-        "law"
+        "government"
       ]
     },
     {
@@ -349,16 +445,7 @@
       "url": "https://max.ru/id1515909328_gos",
       "icon": "📊",
       "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "goszhil",
-      "name": "Служба госжилищного и архитектурно-строительного надзора",
-      "url": "https://max.ru/id1513063953_gos",
-      "icon": "🏢",
-      "avatar": "",
+      "group": "Службы и управления",
       "categories": [
         "government"
       ]
@@ -369,6 +456,7 @@
       "url": "https://max.ru/id1513012099_gos",
       "icon": "",
       "avatar": "",
+      "group": "Службы и управления",
       "categories": [
         "government"
       ]
@@ -379,284 +467,9 @@
       "url": "https://max.ru/id1515907320_gos",
       "icon": "💍",
       "avatar": "",
+      "group": "Службы и управления",
       "categories": [
         "government"
-      ]
-    },
-    {
-      "id": "fondkredit",
-      "name": "Фонд кредитных гарантий",
-      "url": "https://max.ru/id1513065943_gos",
-      "icon": "💳",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "korporaciya",
-      "name": "Корпорация инвестиционного развития",
-      "url": "https://max.ru/id1513062011_gos",
-      "icon": "📈",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "proektnyofis",
-      "name": "Проектный офис Владикавказа",
-      "url": "https://max.ru/id1515911140_gos",
-      "icon": "🏙️",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "gosyust",
-      "name": "Государственное юридическое бюро",
-      "url": "https://max.ru/id1500000667_gos",
-      "icon": "⚖️",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "vpatriot",
-      "name": "Центр военно-патриотического воспитания",
-      "url": "https://max.ru/id1513008617_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "socmolodezh",
-      "name": "Центр социализации молодежи",
-      "url": "https://max.ru/id1516620296_gos",
-      "icon": "🧑‍🤝🧑",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "vmolodezh",
-      "name": "Владикавказский городской молодёжный центр",
-      "url": "https://max.ru/id1515906863_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "cmk",
-      "name": "Центр методической работы и повышения квалификации МК",
-      "url": "https://max.ru/id1502023726_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "government"
-      ]
-    },
-    {
-      "id": "mvd",
-      "name": "МВД по РСО-Алания",
-      "url": "https://max.ru/id1501003484_gos",
-      "icon": "🚔",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "prokuratura",
-      "name": "Прокуратура РСО-Алания",
-      "url": "https://max.ru/id1502009295_gos",
-      "icon": "⚖️",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "arbitrazh",
-      "name": "Арбитражный суд РСО-Алания",
-      "url": "https://max.ru/id1501003928_gos",
-      "icon": "⚖️",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "ufas",
-      "name": "Северо-Осетинское УФАС России",
-      "url": "https://max.ru/id1501004390_gos",
-      "icon": "⚖️",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "rosreestr",
-      "name": "Управление Росреестра по РСО-Алания",
-      "url": "https://max.ru/id1515900318_gos",
-      "icon": "📋",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "rospotrebnadzor",
-      "name": "Роспотребнадзор Северной Осетии",
-      "url": "https://max.ru/id1516608274_gos",
-      "icon": "🦠",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "ufk",
-      "name": "УФК по Республике Северная Осетия – Алания",
-      "url": "https://max.ru/id1502021704_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "ic_su_sk",
-      "name": "ИЦ СУ СК России по РСО-Алания",
-      "url": "https://max.ru/id1513003873_gos2",
-      "icon": "🔍",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "ufsin",
-      "name": "УФСИН России по РСО-Алания",
-      "url": "https://max.ru/id1503008520_gos",
-      "icon": "🔒",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "pristavy",
-      "name": "Судебные приставы Северной Осетии",
-      "url": "https://max.ru/id1516607954_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "gibdd",
-      "name": "Госавтоинспекция МВД по РСО-Алания",
-      "url": "https://max.ru/id1501003484_gos2",
-      "icon": "🚓",
-      "avatar": "",
-      "categories": [
-        "law"
-      ]
-    },
-    {
-      "id": "parlament",
-      "name": "Парламент Республики Северная Осетия-Алания",
-      "url": "https://max.ru/id1502009231_gos",
-      "icon": "⚖️",
-      "avatar": "",
-      "categories": [
-        "parliament"
-      ]
-    },
-    {
-      "id": "mchs_channel",
-      "name": "МЧС по РСО",
-      "url": "https://max.ru/mchs_rso_a",
-      "icon": "🚒",
-      "avatar": "",
-      "categories": [
-        "emergency"
-      ]
-    },
-    {
-      "id": "opershtab",
-      "name": "Оперативный штаб МинЖКХ",
-      "url": "https://max.ru/opershtab_bot",
-      "icon": "⚠️",
-      "avatar": "",
-      "categories": [
-        "emergency",
-        "bots"
-      ]
-    },
-    {
-      "id": "signal_m",
-      "name": "СИГНАЛ-М",
-      "url": "https://max.ru/scanmvd_bot",
-      "icon": "🚨",
-      "avatar": "",
-      "categories": [
-        "emergency",
-        "bots"
-      ]
-    },
-    {
-      "id": "kiberpatrul",
-      "name": "КиберПатруль",
-      "url": "https://max.ru/kiberpatrul_bot",
-      "icon": "🛡️",
-      "avatar": "",
-      "categories": [
-        "emergency",
-        "bots"
-      ]
-    },
-    {
-      "id": "rkb",
-      "name": "РКБ",
-      "url": "https://max.ru/rkb_notification_bot",
-      "icon": "🚑",
-      "avatar": "",
-      "categories": [
-        "emergency",
-        "bots"
-      ]
-    },
-    {
-      "id": "klinika_sogma",
-      "name": "Клиническая больница СОГМА",
-      "url": "https://max.ru/klinika_sogma_bot",
-      "icon": "🏥",
-      "avatar": "",
-      "categories": [
-        "emergency",
-        "bots"
-      ]
-    },
-    {
-      "id": "skmmc",
-      "name": "СК ММЦ (г. Беслан)",
-      "url": "https://max.ru/skmmcmed_bot",
-      "icon": "🏥",
-      "avatar": "",
-      "categories": [
-        "emergency",
-        "bots"
       ]
     },
     {
@@ -665,6 +478,7 @@
       "url": "https://max.ru/id1501002890_gos",
       "icon": "🚑",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -675,6 +489,7 @@
       "url": "https://max.ru/id1511014164_gos",
       "icon": "🏥",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -685,6 +500,7 @@
       "url": "https://max.ru/id1511017599_gos",
       "icon": "🏥",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -695,6 +511,7 @@
       "url": "https://max.ru/id1506003061_gos",
       "icon": "🏥",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -705,6 +522,7 @@
       "url": "https://max.ru/id1501008612_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -715,6 +533,7 @@
       "url": "https://max.ru/id1501008073_gos",
       "icon": "💊",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -725,6 +544,7 @@
       "url": "https://max.ru/id1501024759_gos",
       "icon": "🩺",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -735,6 +555,7 @@
       "url": "https://max.ru/id1501007680_gos",
       "icon": "🩺",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -745,6 +566,7 @@
       "url": "https://max.ru/id1501002297_gos",
       "icon": "🩺",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -755,6 +577,7 @@
       "url": "https://max.ru/id1513031126_gos",
       "icon": "👁️",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -765,6 +588,7 @@
       "url": "https://max.ru/id1501003082_gos",
       "icon": "👶",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -775,6 +599,7 @@
       "url": "https://max.ru/id1501003100_gos",
       "icon": "👶",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -785,6 +610,7 @@
       "url": "https://max.ru/id1502008894_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -795,6 +621,7 @@
       "url": "https://max.ru/id1500002590_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -805,16 +632,7 @@
       "url": "https://max.ru/id1501035863_gos",
       "icon": "🏔️",
       "avatar": "",
-      "categories": [
-        "health"
-      ]
-    },
-    {
-      "id": "pitaniya",
-      "name": "Государственное автономное учреждение «Республиканский центр лечебного и профилактического питания» МЗ",
-      "url": "https://max.ru/id1513064629_gos",
-      "icon": "🍎",
-      "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
@@ -825,48 +643,53 @@
       "url": "https://max.ru/id1516608203_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "health"
       ]
     },
     {
-      "id": "family_mfc",
-      "name": "СЕМЕЙНЫЙ МФЦ РСО-АЛАНИЯ",
-      "url": "https://max.ru/id1515917946_gos",
-      "icon": "👨👩‍👧",
+      "id": "pitaniya",
+      "name": "Государственное автономное учреждение «Республиканский центр лечебного и профилактического питания» МЗ",
+      "url": "https://max.ru/id1513064629_gos",
+      "icon": "🍎",
       "avatar": "",
+      "group": "",
       "categories": [
-        "mfc"
+        "health"
       ]
     },
     {
       "id": "sogu",
       "name": "СОГУ им. К.Л. Хетагурова",
       "url": "https://max.ru/id1502009030_gos",
-      "icon": "",
+      "icon": "🎓",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "universities"
       ]
     },
     {
       "id": "skgmi",
       "name": "СКГМИ (ГТУ)",
       "url": "https://max.ru/id1501002522_biz",
-      "icon": "⚙️",
+      "icon": "🎓",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "universities"
       ]
     },
     {
       "id": "sogma",
       "name": "СОГМА",
       "url": "https://max.ru/id1501003195_biz",
-      "icon": "🩺",
+      "icon": "🎓",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "universities"
       ]
     },
     {
@@ -875,8 +698,9 @@
       "url": "https://max.ru/id1513084551_gos",
       "icon": "👨‍🏫",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -885,8 +709,9 @@
       "url": "https://max.ru/id1501007880_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -895,8 +720,9 @@
       "url": "https://max.ru/id1506003199_gos",
       "icon": "🌾",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -905,8 +731,9 @@
       "url": "https://max.ru/id1502008911_gos",
       "icon": "💻",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -915,18 +742,9 @@
       "url": "https://max.ru/id1509001778_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "pl4",
-      "name": "Профессиональный лицей №4",
-      "url": "https://max.ru/id1501008355_gos",
-      "icon": "🔧",
-      "avatar": "",
-      "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -935,38 +753,9 @@
       "url": "https://max.ru/id1501007023_gos",
       "icon": "🔧",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sktmalh",
-      "name": "СКТМАЛХУ",
-      "url": "https://max.ru/id1500006098_gos",
-      "icon": "🏭",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "skst",
-      "name": "СКСТ",
-      "url": "https://max.ru/id1501005435_gos",
-      "icon": "🏗️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "vgmt",
-      "name": "ВГМТ им. Г. Калоева",
-      "url": "https://max.ru/id1501004833_gos",
-      "icon": "🏭",
-      "avatar": "",
-      "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -975,8 +764,9 @@
       "url": "https://max.ru/id1510008672_gos",
       "icon": "⚙️",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -985,3691 +775,9 @@
       "url": "https://max.ru/id6165009334_gos",
       "icon": "🚂",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rgups",
-      "name": "ВлТЖТ - филиал РГУПС",
-      "url": "https://max.ru/id1501003854_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kroc",
-      "name": "ГБОУ КРОЦ",
-      "url": "https://max.ru/id1501002882_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dialog",
-      "name": "ГБОУ ЦО ДИАЛОГ",
-      "url": "https://max.ru/id1513051041_gos",
-      "icon": "💬",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "intellect",
-      "name": "ГБОУ «ЦО Интеллект»",
-      "url": "https://max.ru/id1501002770_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rfmli",
-      "name": "ГБОУ РФМЛИ",
-      "url": "https://max.ru/id1501030826_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "vershina",
-      "name": "ГБОУ «Вершина»",
-      "url": "https://max.ru/id1513075814_gos",
-      "icon": "🏔️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "alan_gymn",
-      "name": "ГБОУШИ «Аланская гимназия»",
-      "url": "https://max.ru/id1513066070_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gimn5",
-      "name": "Гимназия №5 им. Луначарского",
-      "url": "https://max.ru/id1502023910_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "licey4",
-      "name": "Лицей №4 «Академия Знания» г. Ардона",
-      "url": "https://max.ru/id1506006601_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gimn45",
-      "name": "Гимназия №45 им. Жоржа Дюмезиля",
-      "url": "https://max.ru/id1502024279_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gimn16",
-      "name": "Гимназия №16 им. А.Н. Карасёва",
-      "url": "https://max.ru/id1504034730_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "licey_vlk",
-      "name": "МБОУ-лицей г. Владикавказа",
-      "url": "https://max.ru/id1515900036_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rcocko",
-      "name": "РЦОКО РСО-Алания",
-      "url": "https://max.ru/id1513053190_gos",
-      "icon": "📊",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "irpk",
-      "name": "Институт развития и подготовки кадров",
-      "url": "https://max.ru/id1501007496_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "cpprk",
-      "name": "ГБОУ ЦППРК",
-      "url": "https://max.ru/id1501007954_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rcdyute",
-      "name": "ГБУДО РЦДЮТЭ",
-      "url": "https://max.ru/id1501010918_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rcdo",
-      "name": "Республиканский центр дополнительного образования",
-      "url": "https://max.ru/id1513076617_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "cdo_vlk",
-      "name": "Центр дополнительного образования г. Владикавказ",
-      "url": "https://max.ru/id1513084223_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rdt",
-      "name": "Республиканский дворец детского творчества",
-      "url": "https://max.ru/id1501004865_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dom_tvorch",
-      "name": "МБУДО «Дом детского творчества»",
-      "url": "https://max.ru/id1512004948_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "cdod_prav",
-      "name": "МБУДО ЦДОД Правобережного района",
-      "url": "https://max.ru/id1511025977_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "cdo_iraf",
-      "name": "МБУ ДО «ЦДО» Ирафского района",
-      "url": "https://max.ru/id1514016995_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "cdt_mozdok",
-      "name": "МБУДО «Моздокский ЦДТ»",
-      "url": "https://max.ru/id1510006869_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "cdo_alagir",
-      "name": "Центр детского творчества Алагирского района",
-      "url": "https://max.ru/id1514010009_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "licei_iskusstv",
-      "name": "ГБНОУ Республиканский Лицей Искусств",
-      "url": "https://max.ru/id1515912539_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sogu_career",
-      "name": "Центр карьеры СОГУ",
-      "url": "https://max.ru/id1502009030_gos2",
-      "icon": "💼",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sogu_prep",
-      "name": "СОГУ Отдел довузовской подготовки",
-      "url": "https://max.ru/id1502009030_gos3",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sogu_psy",
-      "name": "Центр психологической диагностики СОГУ",
-      "url": "https://max.ru/id1502009030_gos4",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sogu_alania",
-      "name": "Алания СОГУ делает!",
-      "url": "https://max.ru/id1502009030_gos5",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_vlk",
-      "name": "ГБОУ школа-интернат г.Владикавказ",
-      "url": "https://max.ru/id1501036602_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "nadejda",
-      "name": "ГБОУ школа-интернат Надежда",
-      "url": "https://max.ru/id1507002381_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_alagir",
-      "name": "ГБОУШИ г.Алагир.",
-      "url": "https://max.ru/id1505006920_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_macuta",
-      "name": "ГБОУШИ С.МАЦУТА",
-      "url": "https://max.ru/id1500001043_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_baroev",
-      "name": "ГБОУ школа-интернат им.М.С.Бароева",
-      "url": "https://max.ru/id1512010444_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_kanidi",
-      "name": "МБОШИ им.И.К.Каниди г.Беслана",
-      "url": "https://max.ru/id1511018585_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_mozdok",
-      "name": "ГБОУ коррекционная школа-интернат г.Моздок",
-      "url": "https://max.ru/id1510010537_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch47",
-      "name": "ГБОУ СОШ 47 г. Владикавказ",
-      "url": "https://max.ru/id1501007626_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch48",
-      "name": "МБОУ СОШ № 48 им. Героя Советского Союза Ю.Э. Бунимовича",
-      "url": "https://max.ru/id1501003935_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch33",
-      "name": "Муниципальное общеобразовательное учреждение средняя общеобразовательная школа №33 им.З.Калоева",
-      "url": "https://max.ru/id1504004510_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch5_beslan",
-      "name": "МБОУ СОШ №5 г.Беслана",
-      "url": "https://max.ru/id1511010850_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_gizel",
-      "name": "МБОУ \" СОШ №1 ИМ.А.КОЦОЕВА С. ГИЗЕЛЬ\"",
-      "url": "https://max.ru/id1512010980_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_kambileevo",
-      "name": "МБОУ \"Средняя общеобразовательная школа №1 имени Заслуженного учителя РФ Александра Алексеевича Агаева с. Камбилеевское\"",
-      "url": "https://max.ru/id1512011670_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_lukovskaya",
-      "name": "МБОУ СОШ ст. Луковской им. С.Г. Астанина",
-      "url": "https://max.ru/id1510012100_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_digora",
-      "name": "МБОУ СОШ №2 г. Дигора им. А.Н.Кесаева",
-      "url": "https://max.ru/id1507003829_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_elhotovo",
-      "name": "МБОУ СОШ 1 с. Эльхотово",
-      "url": "https://max.ru/id1509003528_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_tsrau",
-      "name": "МБОУ СОШ с.Црау",
-      "url": "https://max.ru/id1505009078_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sh_inter_mozdok2",
-      "name": "МБОУ Школа-интернат г.Моздока",
-      "url": "https://max.ru/id1510012781_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_mozdok",
-      "name": "МБОУ СОШ №3 г. Моздока",
-      "url": "https://max.ru/id1510011450_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_archonskaya",
-      "name": "МБОУ \"СОШ №2 им. Героя Советского Союза В.Д. Коняхина ст. Архонская\"",
-      "url": "https://max.ru/id1512012434_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch46",
-      "name": "МБОУ СОШ №46 им. И.М. Дзусова",
-      "url": "https://max.ru/id1504034829_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_digora2",
-      "name": "МБОУ СОШ №1 г.Дигоры РСО-Алания",
-      "url": "https://max.ru/id1507003924_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_terskaya",
-      "name": "МБОУ СОШ ст. Терской -канал",
-      "url": "https://max.ru/id1510011080_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch8_beslan",
-      "name": "ГБОУ СОШ 8 г.Беслан",
-      "url": "https://max.ru/id1511013650_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch108",
-      "name": "СОШ 108 им.Ю.В.Андропова",
-      "url": "https://max.ru/id1510008520_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_pavlodolskaya",
-      "name": "МБОУ СОШ ст. Павлодольской",
-      "url": "https://max.ru/id1510009355_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "uo_iraf",
-      "name": "МКУ \"Управление образования АМС Ирафского муниципального района\"",
-      "url": "https://max.ru/id1508002673_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "education",
-        "selfgov"
-      ]
-    },
-    {
-      "id": "sch2_kizlyar",
-      "name": "МБОУ СОШ №2 с. Кизляр",
-      "url": "https://max.ru/id1510011347_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_chikola",
-      "name": "МБОУ СОШ №3 им. Иса Хуадонти с. Чикола Ирафского муниципального района РСО-Алания",
-      "url": "https://max.ru/id1508004342_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_sredniy_uruh",
-      "name": "МБОУ СОШ с. Средний Урух",
-      "url": "https://max.ru/id1514000900_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_balta",
-      "name": "МБОУ СОШ с. Балта общешкольный канал",
-      "url": "https://max.ru/id1501002603_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_chikola2",
-      "name": "МБОУ СОШ №2 ИМ. С. ГАЗДАРОВА С. ЧИКОЛА ИРАФСКОГО МУНИЦИПАЛЬНОГО РАЙОНА РСО-АЛАНИЯ",
-      "url": "https://max.ru/id1508004215_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_lesken",
-      "name": "МБОУ СОШ с.Лескен",
-      "url": "https://max.ru/id1508004286_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "fiagdon_school",
-      "name": "МБОУ «Фиагдонская Школа»",
-      "url": "https://max.ru/id1506006658_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "lastochka",
-      "name": "МБДОУ Ласточка с. Сурх-Дигора",
-      "url": "https://max.ru/id1514001300_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_haznidon",
-      "name": "МБДОУ детский сад №7 \"Колос\" с. Хазнидон",
-      "url": "https://max.ru/id1508004173_gos",
-      "icon": "🌾",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch14",
-      "name": "МБОУ СОШ №14 им.Ларионова В.П.",
-      "url": "https://max.ru/id1501002508_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_surh_digora",
-      "name": "МБОУ СОШ с. Сурх-Дигора",
-      "url": "https://max.ru/id1514000667_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "teremok_novy_uruh",
-      "name": "МБДОУ детский сад №6 \"Теремок\" с. Новый Урух",
-      "url": "https://max.ru/id1508004127_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "solnyshko_chikola",
-      "name": "МБДОУ детский сад №3 \"Солнышко\" с. Чикола",
-      "url": "https://max.ru/id1514001340_gos",
-      "icon": "☀️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_sovetskoe",
-      "name": "МБОУ СОШ им. И.Л. с. Советское",
-      "url": "https://max.ru/id1508004279_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_vinogradnoe",
-      "name": "МБОУ СОШ с. Виноградное, Моздокский р-н.",
-      "url": "https://max.ru/id1510011876_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "teremok_lesken",
-      "name": "МБДОУ детский сад №5 \"Теремок\" с. Лескен",
-      "url": "https://max.ru/id1514000956_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kolobok_chikola",
-      "name": "МБДОУ детский сад №1 \"Колобок\" с. Чикола",
-      "url": "https://max.ru/id1508003973_gos",
-      "icon": "🤡",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "skazka_chikola",
-      "name": "МБДОУ детский сад №4 \"Сказка\" с. Чикола",
-      "url": "https://max.ru/id1514001283_gos",
-      "icon": "👸",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_toldzgyn",
-      "name": "МБОУ СОШ с. Толдзгун",
-      "url": "https://max.ru/id1508004141_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ulybka_sovetskoe",
-      "name": "МБДОУ детский сад №8 \"Улыбка\" с. Советское",
-      "url": "https://max.ru/id1508002715_gos",
-      "icon": "😊",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_novy_uruh",
-      "name": "МБОУ СОШ с.НОВЫЙ УРУХ",
-      "url": "https://max.ru/id1508004303_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_ahsarisar",
-      "name": "МБОУ СОШ им. С. Киргуева с. Ахсарисар",
-      "url": "https://max.ru/id1508004134_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_mostizdah",
-      "name": "МБОУ ООШ с.Мостиздах Дигорского района РСО-А",
-      "url": "https://max.ru/id1507003882_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_beslan_spetsnaz",
-      "name": "ГБОУ СОШ г.Беслан им.Героев Спецназа",
-      "url": "https://max.ru/id1511013675_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_ulybka_mozdok",
-      "name": "МБДОУ ДЕТСКИЙ САД 10 \"УЛЫБКА\"",
-      "url": "https://max.ru/id1510011555_gos",
-      "icon": "😊",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh2_kambileevo",
-      "name": "Канал МБОУ \"ООШ #2 с. Камбилеевское\"",
-      "url": "https://max.ru/id1512011303_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds7_alagir",
-      "name": "МБДОУ «Детский сад №7» г. Алагир",
-      "url": "https://max.ru/id1505009342_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "zolotoy_kluchik",
-      "name": "МБДОО детский сад №177 \"Золотой ключик\"",
-      "url": "https://max.ru/id1513051443_gos",
-      "icon": "🔑",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_alagir",
-      "name": "МБОУ СОШ №3 г. Алагира",
-      "url": "https://max.ru/id1505008998_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kazachata",
-      "name": "МБДОУ - детский сад № 9 \"Казачата\" ст. Луковская",
-      "url": "https://max.ru/id1510018938_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds27",
-      "name": "Детский сад №27",
-      "url": "https://max.ru/id1502024141_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch6_vlk",
-      "name": "МБОУ СОШ6 г.Владикавказ",
-      "url": "https://max.ru/id1503015397_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_mizur",
-      "name": "МБОУ СОШ пос. Мизур",
-      "url": "https://max.ru/id1505009021_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_sunja",
-      "name": "МБОУ \"ООШ с. Сунжа\"",
-      "url": "https://max.ru/id1512010941_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_haznidon",
-      "name": "МБОУ СОШ с.Хазнидон",
-      "url": "https://max.ru/id1508004102_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds18_priter",
-      "name": "МБДОУ - ДЕТСКИЙ САД № 18 ПОС.ПРИТЕРЕЧНОГО МОЗДОКСКОГО МУНИЦИПАЛЬНОГО РАЙОНА",
-      "url": "https://max.ru/id1510010946_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "teremok_darg_koh",
-      "name": "МБДОУ детский сад \"Теремок\" с. Дарг-Кох",
-      "url": "https://max.ru/id1509003253_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kolobok_priter",
-      "name": "МБДОУ - детский сад №13 \"Колобок\" п.Притеречного",
-      "url": "https://max.ru/id1510010921_gos",
-      "icon": "🤡",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_selutin",
-      "name": "Канал МБОУ «СОШ им. Героя Советского Союза А.М. Селютина с. Михайловское»",
-      "url": "https://max.ru/id1512010758_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds24_troitskoe",
-      "name": "МБДОУ 24 с. Троицкое Моздокский район",
-      "url": "https://max.ru/id1510010600_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds3_ardon",
-      "name": "Детский сад 3 г. Ардон",
-      "url": "https://max.ru/id1506006739_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds95_vlk",
-      "name": "МБДОУ ЦРР детский сад №95 г.Владикавказ",
-      "url": "https://max.ru/id1502024511_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds5_sunja",
-      "name": "«Детский сад 5 с.Сунжа»",
-      "url": "https://max.ru/id1512019831_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rsch",
-      "name": "ГБУДО РСШ",
-      "url": "https://max.ru/id1501003090_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_dur_dur",
-      "name": "МБОУ ООШ №1 им.Л.Дзотова с.Дур-Дур Дигорского района РСО-Алания",
-      "url": "https://max.ru/id1507003875_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_solnyshko_zmeyskaya",
-      "name": "МБДОУ детский сад №1 \"Солнышко\" ст. Змейская",
-      "url": "https://max.ru/id1509003542_gos",
-      "icon": "☀️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_chernoyarskaya",
-      "name": "МБОУ ООШ ст.Черноярской",
-      "url": "https://max.ru/id1510011820_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds96",
-      "name": "МБДОУ детский сад №96",
-      "url": "https://max.ru/id1504034748_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "raduga",
-      "name": "МБДОУ детский сад №2 \"Радуга\"",
-      "url": "https://max.ru/id1509003415_gos",
-      "icon": "🌈",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds46",
-      "name": "МБДОУ №46",
-      "url": "https://max.ru/id1503008720_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_kornevoy",
-      "name": "МБОУ СОШ 3 имени Корневой С. В.",
-      "url": "https://max.ru/id1502024261_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gnomik",
-      "name": "МБДОУ Детский сад №41\"ГНОМИК\"",
-      "url": "https://max.ru/id1501032870_gos",
-      "icon": "♂️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds63",
-      "name": "МБДОУ детский сад N 63",
-      "url": "https://max.ru/id1504034836_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds16_archonskaya",
-      "name": "МБДОУ «Детский сад N16 ст. Архонская»",
-      "url": "https://max.ru/id1512013269_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_ardon",
-      "name": "Школа №1 г.Ардона имени Героя Советского Союза Г.В.Пасынкова",
-      "url": "https://max.ru/id1506006577_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_kievskoe",
-      "name": "МБОУ ООШ с.Киевского Моздокского муниципального района",
-      "url": "https://max.ru/id1510011516_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds7_vlk",
-      "name": "МБДОУ Детский сад № 7 г.Владикавказ",
-      "url": "https://max.ru/id1504033800_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_chikola_iraf",
-      "name": "МБОУ СОШ №1 им. Героя Советского Союза А.А. Макоева С. Чикола Ирафского Муниципального района РСО-Алания",
-      "url": "https://max.ru/id1508004208_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds55",
-      "name": "МБДОУ ЦРР - детский сад 55",
-      "url": "https://max.ru/id1501027823_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch30",
-      "name": "МБОУ СОШ№30 им.С.В.Бицаева",
-      "url": "https://max.ru/id1515905644_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch11_english",
-      "name": "МБОУ СОШ №11 с углубленным изучением английского языка им. Уруймагова М.З.",
-      "url": "https://max.ru/id1503018239_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch50",
-      "name": "МБОУ СОШ 50 ИМ. С. В. МАРЗОЕВА",
-      "url": "https://max.ru/id1502024127_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds10_beslan",
-      "name": "МБДОУ «Детский сад №10 г.Беслана»",
-      "url": "https://max.ru/id1511012199_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "khostieva_school",
-      "name": "Кировская Школа имени Якова Хозиева",
-      "url": "https://max.ru/id1506006640_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "uadyndz",
-      "name": "МБ ДОУ детский сад 4 «Уадындз» с. Эльхотово",
-      "url": "https://max.ru/id1509003359_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds61",
-      "name": "МБДОУ №61 г.Владикавказ",
-      "url": "https://max.ru/id1501033217_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds97",
-      "name": "МБДОУ ДЕТСКИЙ САД №97",
-      "url": "https://max.ru/id1502023902_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch27",
-      "name": "МБОУ СОШ №27 им. Ю.С. Кучиева",
-      "url": "https://max.ru/id1503015968_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "alenushka_stavd",
-      "name": "МБДОУ детский сад \"Аленушка\" с.Ставд - Дурт",
-      "url": "https://max.ru/id1509003373_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "teremok_terskaya",
-      "name": "МБДОУ - детский сад №40 \"Теремок\" ст. Терской",
-      "url": "https://max.ru/id1510011611_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "skazka_ardon",
-      "name": "Детский сад «Сказка» г. Ардона",
-      "url": "https://max.ru/id1506006753_gos",
-      "icon": "👸",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds180",
-      "name": "МБДОУ детский сад №180",
-      "url": "https://max.ru/id1500008144_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds20_kizlyar",
-      "name": "МБДОУ-детский сад N20 с.Кизляр",
-      "url": "https://max.ru/id1510017532_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "svetlyachok",
-      "name": "МБДОУ 59 \"Светлячок\" КАНАЛ",
-      "url": "https://max.ru/id1504034667_gos",
-      "icon": "✨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "novoo_setinskaya",
-      "name": "Новости МБДОУ №19 ст.Ново-Осетинской",
-      "url": "https://max.ru/id1510010914_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds92",
-      "name": "МБДОУ детский сад № 92 г.Владикавказ",
-      "url": "https://max.ru/id1502024014_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "poligraphy",
-      "name": "Медиаканал «Технологический колледж полиграфии и дизайна»",
-      "url": "https://max.ru/id1503008618_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds37",
-      "name": "МБДОУ № 37 г.Владикавказ",
-      "url": "https://max.ru/id1504034635_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "zaichik",
-      "name": "МБДОУ ДЕТСКИЙ САД № 5 \"ЗАЙЧИК\" С. ЭЛЬХОТОВО",
-      "url": "https://max.ru/id1509003334_gos",
-      "icon": "🐰",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds24_vlk",
-      "name": "МБДОУ Детский сад № 24?",
-      "url": "https://max.ru/id1503015421_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "planeta_detstva",
-      "name": "Канал «Планета детства 71»?",
-      "url": "https://max.ru/id1502024430_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kolokolchik",
-      "name": "МБДОУ - детский сад №34 \"Колокольчик\" г. Моздока РСО-Алания",
-      "url": "https://max.ru/id1510010819_gos",
-      "icon": "🔔",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds24_dachnoe",
-      "name": "МБДОУ «Детский сад 24 с. Дачное»",
-      "url": "https://max.ru/id1512021125_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_komsomolskoe",
-      "name": "МБОУ СОШ с.Комсомольское",
-      "url": "https://max.ru/id1509003493_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds93",
-      "name": "МБДОУ детский сад 93",
-      "url": "https://max.ru/id1501032855_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds64",
-      "name": "МБДОУ детский сад №64",
-      "url": "https://max.ru/id1504034184_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "duochka",
-      "name": "МБДОУ детский сад 43 \"Дюймовочка\" г. Моздока",
-      "url": "https://max.ru/id1510010872_gos",
-      "icon": "👸",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds17_kizlyar",
-      "name": "МБДОУ-детский сад №17 с.Кизляр",
-      "url": "https://max.ru/id1510017067_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds22",
-      "name": "МБДОУ детский сад №22",
-      "url": "https://max.ru/id1503013738_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds3_vlk",
-      "name": "МАДОУ детский сад №3 г.Владикавказ",
-      "url": "https://max.ru/id1501032950_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds52",
-      "name": "МБДОУ детский сад 52 г.Владикавказ",
-      "url": "https://max.ru/id1504034723_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch6_beslan",
-      "name": "МБОУ СОШ №6 г.Беслана",
-      "url": "https://max.ru/id1511010868_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "zolotoy_kluchik2",
-      "name": "МБДОУ детский сад-ЦРР №35 \"Золотой ключик\"",
-      "url": "https://max.ru/id1510011636_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch19",
-      "name": "МБОУ СОШ 19 им.Е.Г.Коберидзе",
-      "url": "https://max.ru/id1502024046_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "krasnaya_shapochka",
-      "name": "МБДОУ д/с №2 \"Красная шапочка\"",
-      "url": "https://max.ru/id1507003949_gos",
-      "icon": "🧢",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch24",
-      "name": "МБОУ СОШ №24 им.Бутаева К.С. г.Владикавказ",
-      "url": "https://max.ru/id1501033150_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds83",
-      "name": "МБДОУ Детский сад №83",
-      "url": "https://max.ru/id1501002120_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch41",
-      "name": "МБОУ СОШ №41 имени Героя Советского Союза Астана Николаевича Кесаева г. Владикавказа",
-      "url": "https://max.ru/id1504034970_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds6_vinogradnoe",
-      "name": "МБДОУ N6, с Виноградное, Моздокский район,РСО-Алания",
-      "url": "https://max.ru/id1510011308_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_aguzarov",
-      "name": "МБОУ \"СОШ им.Т.К.Агузарова с.Нижняя Саниба\"",
-      "url": "https://max.ru/id1512012385_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch7_beslan",
-      "name": "МБОУ СОШ №7 г.Беслана",
-      "url": "https://max.ru/id1511010875_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "elochka",
-      "name": "МБДОУ - детский сад N5 \"Ёлочка\" г. Моздока",
-      "url": "https://max.ru/id1510010618_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kolosok",
-      "name": "МБДОУ детский сад №8 \"Колосок\"",
-      "url": "https://max.ru/id1507004269_gos",
-      "icon": "🌾",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds6_2",
-      "name": "МБДОУ Детский сад №6",
-      "url": "https://max.ru/id1507003995_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds7_chermen",
-      "name": "Канал МБДОУ \"Детский сад №7 с. Чермен\"",
-      "url": "https://max.ru/id1512019341_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "teremok_ardon",
-      "name": "Детский сад \"Теремок\" г. Ардона",
-      "url": "https://max.ru/id1506006714_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch28",
-      "name": "МБОУ СОШ 28 г.Владикавказ",
-      "url": "https://max.ru/id1502024180_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch40",
-      "name": "МБОУ СОШ №40 им. Героя РФ Трошева Г.Н., г. Владикавказ",
-      "url": "https://max.ru/id1504034145_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_telmana",
-      "name": "Муниципальное бюджетное общеобразовательное учреждение-основная общеобразовательная школа пос. Тельмана Моздокского муниципального района Республики Северная Осетия - Алания",
-      "url": "https://max.ru/id1510011393_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds11_ardon",
-      "name": "МБДОУ №11 г. Ардон",
-      "url": "https://max.ru/id1514001519_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_elhotovo",
-      "name": "МБОУ СОШ №3 им. Героя Советского Союза К.Д. Карсанова с.Эльхотово",
-      "url": "https://max.ru/id1509003447_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_darg_koh",
-      "name": "МБОУ СОШ с.Дарг-Кох",
-      "url": "https://max.ru/id1509003503_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch17",
-      "name": "МБОУ СОШ№17 им. В. Зангиева",
-      "url": "https://max.ru/id1504034096_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds86",
-      "name": "МБДОУ детский сад 86",
-      "url": "https://max.ru/id1504034875_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_nogir",
-      "name": "Школьный канал МБОУ СОШ № 1 им.Д.Хугаева с.Ногир",
-      "url": "https://max.ru/id1512007699_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "novy_gorod",
-      "name": "МБОУ СОШ \"Образовательный центр \"Новый город\"",
-      "url": "https://max.ru/id1500026217_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rodnichek",
-      "name": "МБДОУ детский сад № 30 «Родничок» г. Моздока",
-      "url": "https://max.ru/id1510011065_gos",
-      "icon": "💧",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_zmeyskaya",
-      "name": "МБОУ СОШ №2 ст. Змейская РСО-Алания",
-      "url": "https://max.ru/id1509003581_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "raduga_mozdok",
-      "name": "МБДОУ-детский сад №11 \"Радуга\" г. Моздока",
-      "url": "https://max.ru/id1510018790_gos",
-      "icon": "🌈",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds68",
-      "name": "МБДОУ детский сад N 68",
-      "url": "https://max.ru/id1504034610_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_bagayev",
-      "name": "МБОУ СОШ им.И.С.Багаева с.Сунжа Пригородного муниципального района РСО-Алания",
-      "url": "https://max.ru/id1512010910_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds60",
-      "name": "Канал МБДОУ 60",
-      "url": "https://max.ru/id1504034868_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds85",
-      "name": "МБДОУ Детский сад №85 г.Владикавказа",
-      "url": "https://max.ru/id1516608002_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_verhnyaya_saniba",
-      "name": "МБОУ \"СОШ с.Верхняя Саниба\"",
-      "url": "https://max.ru/id1512012392_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "nogir2",
-      "name": "КАНАЛ-НОГИР 2",
-      "url": "https://max.ru/id1512007709_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds87",
-      "name": "МБДОУ детский сад №87 г.Владикавказ",
-      "url": "https://max.ru/id1501029242_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_dzusov",
-      "name": "МБОУ СОШ ИМ.И.ДЗУСОВА с.ЗАМАНКУЛ",
-      "url": "https://max.ru/id1511011269_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch5_alagir",
-      "name": "КАНАЛ МБОУ СОШ № 5 Г.АЛАГИРА",
-      "url": "https://max.ru/id1505009014_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_farn",
-      "name": "МБОУ СОШ с.Фарн",
-      "url": "https://max.ru/id1511012047_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_kosta",
-      "name": "Детский сад с.Коста",
-      "url": "https://max.ru/id1506006785_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch7_vlk",
-      "name": "МАОУБСОШ №7 Владикавказ",
-      "url": "https://max.ru/id1501002988_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_mozdok",
-      "name": "МБОУ СОШ 1 г. Моздока",
-      "url": "https://max.ru/id1510011403_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch38",
-      "name": "МБОУ СОШ № 38 (многопрофильная) им. В.М. Дегоева",
-      "url": "https://max.ru/id1504034106_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_kokaev",
-      "name": "МБОУ СОШ им. Героя Социалистического Труда С. Кокаева с. Хумалаг",
-      "url": "https://max.ru/id1511010882_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_oktyabrskoe",
-      "name": "МБОУ СОШ N2 С.ОКТЯБРЬСКОЕ",
-      "url": "https://max.ru/id1512012360_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds72",
-      "name": "МБДОУ ДЕТСКИЙ САД №72",
-      "url": "https://max.ru/id1504034025_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gorvozduh",
-      "name": "Горный воздух",
-      "url": "https://max.ru/id1502022225_gos",
-      "icon": "🏔️",
-      "avatar": "",
-      "categories": [
-        "education",
-        "other"
-      ]
-    },
-    {
-      "id": "oosh_alhanchurt",
-      "name": "МБОУ ООШ п. Алханчурт",
-      "url": "https://max.ru/id1512011938_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds6_archonskaya",
-      "name": "МБДОУ \"Детский сад №6 ст. Архонская\"",
-      "url": "https://max.ru/id1512013244_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_hurikau",
-      "name": "МБОУ СОШ с.Хурикау",
-      "url": "https://max.ru/id1510012573_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds40",
-      "name": "МБДОУ Детский сад 40?",
-      "url": "https://max.ru/id1502024110_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch37",
-      "name": "МБОУ СОШ №37 ИМ.А.С.МНАЦАКАНОВА",
-      "url": "https://max.ru/id1503015598_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch26",
-      "name": "Канал МБОУ СОШ 26 г. Владикавказ",
-      "url": "https://max.ru/id1501002272_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_tarskoe",
-      "name": "МБОУ \"СОШ №2 с.Тарское\"",
-      "url": "https://max.ru/id1512013011_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_zilgi",
-      "name": "МБОУ СОШ с. Зильги",
-      "url": "https://max.ru/id1511011290_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds67",
-      "name": "МБДОУ детский сад №67",
-      "url": "https://max.ru/id1504034586_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds179",
-      "name": "МБДОУ №179",
-      "url": "https://max.ru/id1500008063_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_archonskaya",
-      "name": "Канал МБОУ \" СОШ №1 ст. Архонская\"",
-      "url": "https://max.ru/id1512010821_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "malyutka",
-      "name": "МБДОУ 2\"МАЛЮТКА\"С.КАРДЖИН",
-      "url": "https://max.ru/id1509003486_gos",
-      "icon": "👶",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_oktyabrskoe",
-      "name": "\"МБОУ \"СОШ № 1 с. Октябрьское\"",
-      "url": "https://max.ru/id1512010765_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch29",
-      "name": "МБОУ СОШ №29 им. А.В. Днепровского",
-      "url": "https://max.ru/id1502025650_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch34",
-      "name": "МБОУ СОШ № 34 имени Г.И.Хетагурова",
-      "url": "https://max.ru/id1503015213_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds12_beslan",
-      "name": "МБДОУ \"Детский сад N12 г.Беслана\"",
-      "url": "https://max.ru/id1511012223_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_kurtat",
-      "name": "МБОУ СОШ с.Куртат",
-      "url": "https://max.ru/id1512010772_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_dongaron",
-      "name": "Канал МБОУ \"СОШ с. Донгарон\"",
-      "url": "https://max.ru/id1512011656_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_gizel",
-      "name": "МБОУ \"СОШ № 2 им. Д.Доева с. Гизель\"",
-      "url": "https://max.ru/id1512012378_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds79",
-      "name": "МБДОУ Детский сад № 79",
-      "url": "https://max.ru/id1502022874_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds27_saniba",
-      "name": "МБДОУ №27 с. Н. Саниба",
-      "url": "https://max.ru/id1500004809_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds91",
-      "name": "МБДОУ Детский сад 91 Владикавказ",
-      "url": "https://max.ru/id1504034995_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_mayskoe",
-      "name": "МБОУ \"СОШ с.Майское\"",
-      "url": "https://max.ru/id1512010860_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_pliyev",
-      "name": "МБОУ СОШ им.Исса Плиева с.Батако",
-      "url": "https://max.ru/id1511012054_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "msoosh2",
-      "name": "МБОУ МСОШ №2",
-      "url": "https://max.ru/id1502024335_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds34",
-      "name": "МБДОУ детский сад 34 г.Владикавказ",
-      "url": "https://max.ru/id1502024039_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch39",
-      "name": "МБОУ СОШ №39 им.Т.С.Дзебисова",
-      "url": "https://max.ru/id1504034709_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds84",
-      "name": "МБДОУ детский сад № 84",
-      "url": "https://max.ru/id1503015380_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_ramonovo",
-      "name": "МБОУ ООШ пос. Рамоново",
-      "url": "https://max.ru/id1505009141_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch13",
-      "name": "МБОУ СОШ №13 ИМ. К.ХЕТАГУРОВА",
-      "url": "https://max.ru/id1502024247_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh1_chermen",
-      "name": "МБОУ \"ООШ №1 с.Чермен\"",
-      "url": "https://max.ru/id1512011688_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds26_gizel",
-      "name": "26 КАНАЛ ДС ГИЗЕЛЬ",
-      "url": "https://max.ru/id1500004799_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_komgaron",
-      "name": "Новости на канале МБОУ \"СОШ с.Комгарон\"",
-      "url": "https://max.ru/id1512010885_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "erudit",
-      "name": "ГБОУ ЦО «ЭРУДИТ»",
-      "url": "https://max.ru/id1501029877_gos",
-      "icon": "💡",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_chermen",
-      "name": "КАНАЛ МБОУ \"СОШ №2 с.Чермен\"",
-      "url": "https://max.ru/id1512012402_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_dargavs",
-      "name": "Канал МБОУ \"ООШ с.Даргавс\"",
-      "url": "https://max.ru/id1512011127_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "karapuz",
-      "name": "МБДОУ детский сад 3 \"КАРАПУЗ\" г.Дигора",
-      "url": "https://max.ru/id1507004043_gos",
-      "icon": "👶",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch4_beslan",
-      "name": "МБОУ СОШ № 4 г.Беслана",
-      "url": "https://max.ru/id1511010804_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds23_archonskaya",
-      "name": "МБДОУ «Детский сад 23 ст.Архонская»",
-      "url": "https://max.ru/id1512019856_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds10_oktyabrskoe",
-      "name": "МБДОУ \"Детский сад №10 с.Октябрьское\"",
-      "url": "https://max.ru/id1512013237_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_tsalyk",
-      "name": "МБОУ СОШ с. Цалык",
-      "url": "https://max.ru/id1511012030_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_ir",
-      "name": "МБОУ СОШ с. Ир",
-      "url": "https://max.ru/id1511015224_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_zmeyskaya",
-      "name": "МБОУ СОШ №1 ст.Змейская",
-      "url": "https://max.ru/id1509003454_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds181",
-      "name": "МБДОУ детский сад №181",
-      "url": "https://max.ru/id1500013338_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch9_beslan",
-      "name": "МБОУ СОШ №9 г.Беслана",
-      "url": "https://max.ru/id1500018760_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_pushkin",
-      "name": "МБОУ СОШ №2 им. А.С.Пушкина г.Моздок",
-      "url": "https://max.ru/id1510011410_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch7_mozdok",
-      "name": "МБОУ СОШ №7 г. Моздока",
-      "url": "https://max.ru/id1510012157_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "karmanskaya",
-      "name": "Карманская школа❤️",
-      "url": "https://max.ru/id1507004131_gos",
-      "icon": "❤️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "rodnichek_kardjin",
-      "name": "МБДОУ1 \"Родничок\" с.Карджин",
-      "url": "https://max.ru/id1509003366_gos",
-      "icon": "💧",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch18",
-      "name": "МБОУ СОШ №18 имени Героя РФ Стыцина А.М. г.Владикавказа",
-      "url": "https://max.ru/id1502024286_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds2_sunja",
-      "name": "МБДОУ \"Детский сад № 2 с.Сунжа\"",
-      "url": "https://max.ru/id1512012106_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds19_kambileevo",
-      "name": "МБДОУ \"Детский сад №19 с. Камбилеевское\"",
-      "url": "https://max.ru/id1512013438_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_morgoev",
-      "name": "МБОУ СОШ ИМ.ГЕРОЯ СОВЕТСКОГО СОЮЗА Б.Х.МОРГОЕВА С.КАРДЖИН",
-      "url": "https://max.ru/id1509003550_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_kalinskiy",
-      "name": "МБОУ ООШ пос. Калининский Моздокского муниципального района",
-      "url": "https://max.ru/id1510011523_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds4_mayskoe",
-      "name": "МБДОУ «Детский сад №4 с.Майское»",
-      "url": "https://max.ru/id1512019849_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_beslan",
-      "name": "МБОУ СОШ №3 г. Беслана",
-      "url": "https://max.ru/id1511010843_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch1_tarskoe",
-      "name": "МБОУ \"СОШ №1 с.Тарское\" Пригородного муниципального района РСО-Алания",
-      "url": "https://max.ru/id1512010797_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_dzuariakau",
-      "name": "МБОУ СОШ с.Дзуарикау - название канала",
-      "url": "https://max.ru/id1505009127_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_chermen",
-      "name": "МБОУ СОШ №3 с.Чермен",
-      "url": "https://max.ru/id1512010839_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds8_gizel",
-      "name": "МБДОУ \"Детский сад № 8 с. Гизель\"",
-      "url": "https://max.ru/id1511013481_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_priter",
-      "name": "МБОУ СОШ п.Притеречного Моздокского муниципального района",
-      "url": "https://max.ru/id1510009411_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_yandieva",
-      "name": "МБОУ \"СОШ им. ДЖ.Х.ЯНДИЕВА С. ДАЧНОЕ\"",
-      "url": "https://max.ru/id1512012096_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dou13_tarskoe",
-      "name": "Канал ДОУ № 13 с.Тарское",
-      "url": "https://max.ru/id1512019310_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds16_lukovskaya",
-      "name": "МБДОУ-детский сад №16 ст.Луковской Моздокского муниципального района",
-      "url": "https://max.ru/id1510010826_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds5_beslan",
-      "name": "МБДОУ \"Детский сад № 5 г. Беслана\" ВК",
-      "url": "https://max.ru/id1511012110_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_ursdon",
-      "name": "МБОУ ООШ им.Созаева Ю.К. с.Урсдон",
-      "url": "https://max.ru/id1507004011_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds3_oktyabrskoe",
-      "name": "МБДОУ \"ДЕТСКИЙ САД №3 С. ОКТЯБРЬСКОЕ\"",
-      "url": "https://max.ru/id1512019359_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_hodova",
-      "name": "МБОУ СОШ им. Ходова К.Х. с Н. Батако",
-      "url": "https://max.ru/id1511011283_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds15_oktyabrskoe",
-      "name": "МБДОУ \"Детский сад №15 с.Октябрьское\"",
-      "url": "https://max.ru/id1512008156_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "duochka_elhotovo",
-      "name": "МБДОУ детский сад №2 \"Дюймовочка\" с.Эльхотово",
-      "url": "https://max.ru/id1511019892_gos",
-      "icon": "👸",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds12_nogir",
-      "name": "МБДОУ \"ДЕТСКИЙ САД №12 С.НОГИР\"",
-      "url": "https://max.ru/id1512007642_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kalinka",
-      "name": "МБДОУ детский сад N9 \"Калинка\" ст. Николаевская",
-      "url": "https://max.ru/id1507004276_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds37_razdolnoe",
-      "name": "МБДОУ-детский сад№37 с.Раздольное",
-      "url": "https://max.ru/id1510013129_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds25_ir",
-      "name": "КАНАЛ МБДОУ №25 С.ИР\"",
-      "url": "https://max.ru/id1512021118_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds17_komgaron",
-      "name": "МБДОУ \"ДЕТСКИЙ САД №17 С.КОМГАРОН\"",
-      "url": "https://max.ru/id1511013450_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds1_kambileevo",
-      "name": "КАНАЛ \"ДЕТСКИЙ САД №1 С.КАМБИЛЕЕВСКОЕ\"",
-      "url": "https://max.ru/id1512013251_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds21_mihailovskoe",
-      "name": "Канал МБДОУ \"Д/с №21 с. Михайловское\"",
-      "url": "https://max.ru/id1512013163_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds22_alhanchurt",
-      "name": "МБДОУ \"Детский сад №22 п.Алханчурт\"",
-      "url": "https://max.ru/id1512013170_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ulybka_digora",
-      "name": "МБДОУ детский сад №5 \"Улыбка\" г.Дигора",
-      "url": "https://max.ru/id1507003956_gos",
-      "icon": "😊",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "didinag",
-      "name": "МБДОУ ДЕТСКИЙ САД № 1 \"ДИДИНАГ\" С. ЭЛЬХОТОВО",
-      "url": "https://max.ru/id1509003310_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_ardon",
-      "name": "МБОУ СОШ №2г.Ардона",
-      "url": "https://max.ru/id1506006584_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds10_2",
-      "name": "МБДОУ детский сад # 10",
-      "url": "https://max.ru/id1503008745_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds22_malgobek",
-      "name": "МБДОУ22 с.Малгобек Моздокского района РСО-Алания",
-      "url": "https://max.ru/id1510011040_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch22",
-      "name": "МБОУ СОШ №22 имени В.М.Коняева",
-      "url": "https://max.ru/id1504033938_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch8_mozdok",
-      "name": "МБОУ СОШ №8 г. Моздока РСО - Алания",
-      "url": "https://max.ru/id1510012213_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh6_mozdok",
-      "name": "МБОУООШ № 6 г. Моздока",
-      "url": "https://max.ru/id1510011330_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_troitskoe",
-      "name": "МБОУ СОШ с. Троицкого Моздокского района РСО-Алания",
-      "url": "https://max.ru/id1510010907_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dsh_pravoberezh",
-      "name": "МБУ ДО \"ДХШ\" Правобережного района",
-      "url": "https://max.ru/id1511011519_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch43",
-      "name": "МБОУ СОШ№43",
-      "url": "https://max.ru/id1501032975_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_brut",
-      "name": "МБОУ СОШ с. Брут",
-      "url": "https://max.ru/id1511012022_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dou9_chermen",
-      "name": "Канал ДОУ 9. Чермен",
-      "url": "https://max.ru/id1511013499_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "hurzarin",
-      "name": "МБДОУ д/с «ХУРЗАРИН\" с. Комсомольское",
-      "url": "https://max.ru/id1509003221_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_zamankul",
-      "name": "МБДОУ \"Детский сад с. Заманкул\"",
-      "url": "https://max.ru/id1511012311_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_predgornoe",
-      "name": "МБОУ СОШ с. Предгорное",
-      "url": "https://max.ru/id1510011315_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_veseloe",
-      "name": "МБОУ СОШ с.Веселое",
-      "url": "https://max.ru/id1510012220_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_novoe",
-      "name": "МБОУ \"СОШ С. НОВОЕ\"",
-      "url": "https://max.ru/id1512019655_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds13_beslan",
-      "name": "МБДОУ \"Детский сад №13 г.Беслана\"",
-      "url": "https://max.ru/id1511012150_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds21_vlk",
-      "name": "Канал МБДОУ детский сад № 21 г.Владикавказ",
-      "url": "https://max.ru/id1504030616_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_fiagdon",
-      "name": "МБОУ СОШ п.В. Фиагдон",
-      "url": "https://max.ru/id1505009060_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_alagir",
-      "name": "МБОУ СОШ 2 г. Алагира",
-      "url": "https://max.ru/id1505008980_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "suadon",
-      "name": "МАДОУ №107 \"Суадон\"",
-      "url": "https://max.ru/id1501033136_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds8_beslan",
-      "name": "МБДОУ \"Детский сад №8 г.Беслана\"",
-      "url": "https://max.ru/id1511011710_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_dur_dur",
-      "name": "МБОУ СОШ №2 с.Дур-Дур Дигорского района РСО-Алания",
-      "url": "https://max.ru/id1507003963_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_nogir_music",
-      "name": "Муниципальное бюджетное учреждение дополнительного образования «Детская Музыкальная Школа с. Ногир»",
-      "url": "https://max.ru/id1512012804_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds51",
-      "name": "МБДОУ ДЕТСКИЙ САД №51",
-      "url": "https://max.ru/id1502023758_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "daragavs_club",
-      "name": "МКУ \"Клуб\" Даргавс",
-      "url": "https://max.ru/id1512017827_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch31",
-      "name": "МБОУ СОШ №31 ИМЕНИ ГЕРОЯ СОВЕТСКОГО СОЮЗА Э.Б. АХСАРОВА",
-      "url": "https://max.ru/id1503015693_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds10_ardon",
-      "name": "Детский сад №10 г.Ардон",
-      "url": "https://max.ru/id1506006841_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch36",
-      "name": "МБОУ СОШ №36",
-      "url": "https://max.ru/id1504000280_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_sindzikau",
-      "name": "МБОУ ООШ с.Синдзикау им.А.Т.Гапбаева Дигорского района",
-      "url": "https://max.ru/id1507003900_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch42",
-      "name": "КАНАЛ МБОУ СОШ №42 им.Х.Мамсурова",
-      "url": "https://max.ru/id1504034890_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "stavd_durta",
-      "name": "✅СТАВД-ДУРТА✅",
-      "url": "https://max.ru/id1509000830_gos",
-      "icon": "✅",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "malenkaya_strana",
-      "name": "МБДОУ ДЕТСКИЙ САД № 176 \"МАЛЕНЬКАЯ СТРАНА\"",
-      "url": "https://max.ru/id1513038675_gos",
-      "icon": "🏰",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gazeta_vladikavkaz",
-      "name": "Газета \"Владикавказ\"",
-      "url": "https://max.ru/id1502025836_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "education",
-        "media"
-      ]
-    },
-    {
-      "id": "sch_razdzog",
-      "name": "МБОУ СОШ с.Раздзог",
-      "url": "https://max.ru/id1511012262_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_kadgaron",
-      "name": "Детский сад с.Кадгарон",
-      "url": "https://max.ru/id1506006778_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds47",
-      "name": "КАНАЛ ☀️МБДОУ детский сад 47☀️",
-      "url": "https://max.ru/id1504034628_gos",
-      "icon": "☀️",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "gimn4",
-      "name": "МБОУ гимназия №4",
-      "url": "https://max.ru/id1503015855_gos",
-      "icon": "🎓",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch3_ardon",
-      "name": "Школа №3 г. Ардона",
-      "url": "https://max.ru/id1506006591_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds81",
-      "name": "МБДОУ №81",
-      "url": "https://max.ru/id1504030856_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds6_beslan",
-      "name": "МБДОУ \"Детский сад № 6 город Беслан\"",
-      "url": "https://max.ru/id1511012142_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds77",
-      "name": "МБДОУ детский сад №77",
-      "url": "https://max.ru/id1504034716_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_novy_batako",
-      "name": "МБДОУ \"Детский сад с Новый Батако\"",
-      "url": "https://max.ru/id1511011861_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds99",
-      "name": "МБДОУ Д/С 99",
-      "url": "https://max.ru/id1501033048_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds88",
-      "name": "МБДОУ детский сад №88",
-      "url": "https://max.ru/id1504034949_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_razdolnogo",
-      "name": "МБОУ ООШ с.Раздольного",
-      "url": "https://max.ru/id1510011354_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "oosh_suhotskogo",
-      "name": "МБОУ ООШ с. Сухотского",
-      "url": "https://max.ru/id1510011273_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_sabi_iran",
-      "name": "МБДОУ ДЕТСКИЙ САД \"САБИ\" С.ИРАН",
-      "url": "https://max.ru/id1509003302_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds14_tarskoe",
-      "name": "МБДОУ \"ДЕТСКИЙ САД №14 С. ТАРСКОЕ\"",
-      "url": "https://max.ru/id1512019327_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds9_ardon",
-      "name": "Детский сад №9 г. Ардона",
-      "url": "https://max.ru/id1514014229_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds38",
-      "name": "Детский сад №38",
-      "url": "https://max.ru/id1502024060_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds65",
-      "name": "МБДОУ детский сад №65",
-      "url": "https://max.ru/id1502024494_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_michurino",
-      "name": "Детский сад с. Мичурино",
-      "url": "https://max.ru/id1506006760_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_mayramadag",
-      "name": "МБОУ СОШ с. Майрамадаг",
-      "url": "https://max.ru/id1505009134_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ivushka",
-      "name": "МБДОУ ДЕТСКИЙ САД № 3 \"ИВУШКА\" С. ЭЛЬХОТОВО",
-      "url": "https://max.ru/id1509003341_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_elhotovo",
-      "name": "МБОУ СОШ №2 с. Эльхотово",
-      "url": "https://max.ru/id1509003461_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_kirovo",
-      "name": "Детский сад с.Кирово",
-      "url": "https://max.ru/id1506006802_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_zabava",
-      "name": "МБДОУ -детский сад №4 \"Забава\" г.Моздока",
-      "url": "https://max.ru/id1510011058_gos",
-      "icon": "🎉",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds27_kizlyar",
-      "name": "МБДОУ- детский сад №27 с.Кизляр Моздокского муниципального района",
-      "url": "https://max.ru/id1500008320_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dsh_october",
-      "name": "ДХШ с.Октябрьское Пригородного муниципального района РСО-Алания",
-      "url": "https://max.ru/id1512012441_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch5_mozdok",
-      "name": "МБОУ СОШ № 5 г. Моздока",
-      "url": "https://max.ru/id1510010150_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "michurinskaya",
-      "name": "Мичуринская Школа",
-      "url": "https://max.ru/id1506006619_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch2_beslan",
-      "name": "МБОУ СОШ №2 г.Беслана",
-      "url": "https://max.ru/id1511010836_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds11_chermen",
-      "name": "МБДОУ \"ДЕТСКИЙ САД № 11 С. ЧЕРМЕН\"",
-      "url": "https://max.ru/id1511013509_gos2",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "nartovskaya",
-      "name": "Нартовская Школа",
-      "url": "https://max.ru/id1506006626_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds14_beslan",
-      "name": "МБДОУ Детский сад 14 г.Беслана",
-      "url": "https://max.ru/id1511011702_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_farn",
-      "name": "МБДОУ \"Детский сад с. Фарн\"",
-      "url": "https://max.ru/id1511012255_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch4_chermen",
-      "name": "МБОУ \"СОШ №4 с.Чермен\" Пригородного муниципального района РСО-Алания",
-      "url": "https://max.ru/id1500004252_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_batako",
-      "name": "МБДОУ \"Детский сад с. Батако\"",
-      "url": "https://max.ru/id1511012287_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_humalag",
-      "name": "МБДОУ \"Детский сад с. Хумалаг\"",
-      "url": "https://max.ru/id1511012128_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds7_beslan",
-      "name": "МБДОУ \"Детский сад 7 г. Беслана\"",
-      "url": "https://max.ru/id1511012304_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_zilgi",
-      "name": "МБДОУ Детский сад с.Зильги",
-      "url": "https://max.ru/id1511012329_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_mahcesk",
-      "name": "МБОУ СОШ им. Г. Малиева с. Махческ",
-      "url": "https://max.ru/id1508004293_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kadgaronskaya",
-      "name": "Кадгаронская Школа",
-      "url": "https://max.ru/id1506006665_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "kostaevskaya",
-      "name": "«КОСТАЕВСКАЯ ШКОЛА»",
-      "url": "https://max.ru/id1506006633_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "sch_stavd",
-      "name": "МБОУ СОШ с.Ставд-Дурт",
-      "url": "https://max.ru/id1500012687_gos",
-      "icon": "🏫",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds173",
-      "name": "МБДОУ детский сад №173",
-      "url": "https://max.ru/id1503013463_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds30",
-      "name": "МБДОУ детский сад №30",
-      "url": "https://max.ru/id1501033224_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds_olgin",
-      "name": "МБДОУ \"Детский сад с.Ольгинское\"",
-      "url": "https://max.ru/id1511012336_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds11_beslan",
-      "name": "МБДОУ \"ДЕТСКИЙ САД N11 Г.БЕСЛАНА\"",
-      "url": "https://max.ru/id1511012135_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds28_novoe",
-      "name": "МБДОУ \"ДЕТСКИЙ САД №28 С. НОВОЕ\"",
-      "url": "https://max.ru/id1500015381_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "alenushka",
-      "name": "МБДОУ д/с №10 \"Алёнушка\"",
-      "url": "https://max.ru/id1507003931_gos",
-      "icon": "👸",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dshi_lolaeva",
-      "name": "Детская школа искусств имени З. А. Лолаевой",
-      "url": "https://max.ru/id1503016760_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dhsh_tavasiev",
-      "name": "МБУДО ДЕТСКАЯ ХУДОЖЕСТВЕННАЯ ШКОЛА ИМ. С. Д. ТАВАСИЕВА",
-      "url": "https://max.ru/id1501036747_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dmsh_makoev",
-      "name": "МБУДО \"ДМШ им. А. В. Макоева\"",
-      "url": "https://max.ru/id1511011445_gos",
-      "icon": "🎵",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dshi_archonskaya",
-      "name": "МБУ ДО \"Детская школа искусств ст. Архонская\"",
-      "url": "https://max.ru/id1512012280_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dsh_mozdok_art",
-      "name": "МБУДО Моздокская детская художественная школа им. Т.М.Тадеева РСО-Алания",
-      "url": "https://max.ru/id1510012277_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dmsh_mozdok_music",
-      "name": "МБУДО - Моздокская детская музыкальная школа имени М.И.Глинки",
-      "url": "https://max.ru/id1510012069_gos",
-      "icon": "🎵",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ddshi",
-      "name": "МБУ ДО ДДШИ",
-      "url": "https://max.ru/id1507003868_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "odmsh_kaitmazova",
-      "name": "МБУ ДО \"ОДМШ им. З. А. Кайтмазовой\"",
-      "url": "https://max.ru/id1512012297_gos",
-      "icon": "🎵",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dsh_kokaev",
-      "name": "МКУДО “ДШИ ИМ. С.Г. КОКАЕВА“",
-      "url": "https://max.ru/id1509003800_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dsh_zmeyskaya",
-      "name": "МКУДО “ДШИ СТ. ЗМЕЙСКАЯ”",
-      "url": "https://max.ru/id1509003260_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dsh_priter",
-      "name": "МБУДО - Притеречная детская школа искусств",
-      "url": "https://max.ru/id1510012083_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "music_school_mk",
-      "name": "\"Детская музыкальная школа МК РСО-Алания\"",
-      "url": "https://max.ru/id1501035334_gos",
-      "icon": "🎵",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "dshi_ardon",
-      "name": "Ардонская ДШИ",
-      "url": "https://max.ru/id1506006418_gos",
-      "icon": "🎨",
-      "avatar": "",
-      "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -4678,8 +786,9 @@
       "url": "https://max.ru/id1502019102_gos",
       "icon": "🎭",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -4688,8 +797,9 @@
       "url": "https://max.ru/id1501006580_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
+        "colleges"
       ]
     },
     {
@@ -4698,268 +808,9 @@
       "url": "https://max.ru/id1501021564_gos",
       "icon": "🎨",
       "avatar": "",
+      "group": "",
       "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds45",
-      "name": "МБДОУ д/с №45",
-      "url": "https://max.ru/id1503013632_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "ds75",
-      "name": "МБДОУ детский сад №75",
-      "url": "https://max.ru/id1504034191_gos",
-      "icon": "🏠",
-      "avatar": "",
-      "categories": [
-        "education"
-      ]
-    },
-    {
-      "id": "borba_baroev",
-      "name": "ГБУ ДО «СШОР ПО ГРЕКО-РИМСКОЙ БОРЬБЕ ИМЕНИ ХАСАНА МАХАРБЕКОВИЧА БАРОЕВА»",
-      "url": "https://max.ru/id1515919630_gos",
-      "icon": "🤼",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "boks",
-      "name": "ГБУ ДО \"СШОР по боксу\"",
-      "url": "https://max.ru/id1513046901_gos",
-      "icon": "🥊",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "legkaya_atletika",
-      "name": "ГБУ ДО \"Спортивная школа Олимпийского резерва по легкой атлетике\"",
-      "url": "https://max.ru/id1502025530_gos",
-      "icon": "🏃",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "tyazhelaya_atletika",
-      "name": "ГБУ ДО \"СШОР по тяжелой атлетике\"",
-      "url": "https://max.ru/id1502025392_gos",
-      "icon": "🏋️",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "fechtovanie",
-      "name": "ГБУ ДО «СШОР по фехтованию»",
-      "url": "https://max.ru/id1502046868_gos",
-      "icon": "🤺",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "gimnastika",
-      "name": "ГБУ ДО \"Спортивная школа по художественной гимнастике\"",
-      "url": "https://max.ru/id1501034154_gos",
-      "icon": "🤸",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "edinoborstva",
-      "name": "ГБУ ДО «Спортивная школа единоборств»",
-      "url": "https://max.ru/id1514002110_gos",
-      "icon": "🥋",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "stimul",
-      "name": "ГБУ ДО \"Спортивная школа паралимпийского резерва \"Стимул\"",
-      "url": "https://max.ru/id1513062741_gos",
-      "icon": "♿",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "urozhay",
-      "name": "ГБУ ДО «Спортивная школа «Урожай»",
-      "url": "https://max.ru/id1515910556_gos",
-      "icon": "🌾",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss2",
-      "name": "ГБУ ДО \"Спортивная школа №2\"",
-      "url": "https://max.ru/id1502025360_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss5",
-      "name": "Спортивная Школа №5",
-      "url": "https://max.ru/id1501033785_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "fadzaev",
-      "name": "МБУ ДО \"Спортивная школа им. А. Фадзаева\" Ирафского муниципального района",
-      "url": "https://max.ru/id1508003726_gos",
-      "icon": "🤼",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "dzyudo_mozdok",
-      "name": "МБУДО СШ \"Дзюдо\"г.Моздока",
-      "url": "https://max.ru/id1510010431_gos",
-      "icon": "🥋",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss1_mozdok",
-      "name": "МБУДО СШ№1 г. Моздока",
-      "url": "https://max.ru/id1510011097_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss2_mozdok",
-      "name": "МБУДО Спортивная школа №2 г.Моздока",
-      "url": "https://max.ru/id1510010985_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss_alagir",
-      "name": "МБУДО «СШ» г. Алагир",
-      "url": "https://max.ru/id1514000120_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss1",
-      "name": "МБУ ДО СШ 1",
-      "url": "https://max.ru/id1512009801_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "ss2_2",
-      "name": "МБУДО СШ 2",
-      "url": "https://max.ru/id1512012346_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "akademia_alania",
-      "name": "Академия Футбола «Алания»",
-      "url": "https://max.ru/id1513060462_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "yunost",
-      "name": "ШКОЛА ФУТБОЛА \"ЮНОСТЬ\" ЧЕМПИОНЫ",
-      "url": "https://max.ru/id1504034113_gos",
-      "icon": "⚽",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "manezh",
-      "name": "ДС «Манеж»",
-      "url": "https://max.ru/id1502017708_gos",
-      "icon": "🏟️",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "sok_tedeev",
-      "name": "МБУ \"СОК\" им. Е.М. Тедеева",
-      "url": "https://max.ru/id1512005067_gos",
-      "icon": "🏟️",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "sjun",
-      "name": "МБУДО \"СЮН\" Пригородного муниципального района РСО - Алания",
-      "url": "https://max.ru/id1512010902_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "sport"
-      ]
-    },
-    {
-      "id": "sjn_digora",
-      "name": "МБУ ДО \"СТАНЦИЯ ЮНЫХ НАТУРАЛИСТОВ\" Г. ДИГОРА",
-      "url": "https://max.ru/id1507003917_gos",
-      "icon": "🌱",
-      "avatar": "",
-      "categories": [
-        "sport"
+        "colleges"
       ]
     },
     {
@@ -4968,6 +819,7 @@
       "url": "https://max.ru/id1502017592_gos",
       "icon": "🎭",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -4978,16 +830,7 @@
       "url": "https://max.ru/id1504032684_gos",
       "icon": "🎭",
       "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "alan_theater",
-      "name": "ГААТ \"АЛАН\"",
-      "url": "https://max.ru/id1504031289_gos",
-      "icon": "🎭",
-      "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -4998,6 +841,7 @@
       "url": "https://max.ru/id1503005991_gos",
       "icon": "🎭",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -5008,6 +852,7 @@
       "url": "https://max.ru/id1504035004_gos",
       "icon": "🎭",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -5018,6 +863,7 @@
       "url": "https://max.ru/id1501004135_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -5028,6 +874,7 @@
       "url": "https://max.ru/id1501010851_gos",
       "icon": "🐎",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -5038,6 +885,7 @@
       "url": "https://max.ru/id1502023589_gos",
       "icon": "🏛️",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -5048,6 +896,7 @@
       "url": "https://max.ru/id1502045092_gos",
       "icon": "🏛️",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
@@ -5058,351 +907,273 @@
       "url": "https://max.ru/id1502045335_gos",
       "icon": "🎭",
       "avatar": "",
+      "group": "",
       "categories": [
         "culture"
       ]
     },
     {
-      "id": "mamurov_library",
-      "name": "Республиканская детская библиотека им. Д. Мамсурова",
-      "url": "https://max.ru/id1501030512_gos",
+      "id": "borba_baroev",
+      "name": "ГБУ ДО «СШОР ПО ГРЕКО-РИМСКОЙ БОРЬБЕ ИМЕНИ ХАСАНА МАХАРБЕКОВИЧА БАРОЕВА»",
+      "url": "https://max.ru/id1515919630_gos",
+      "icon": "🤼",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "boks",
+      "name": "ГБУ ДО \"СШОР по боксу\"",
+      "url": "https://max.ru/id1513046901_gos",
+      "icon": "🥊",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "legkaya_atletika",
+      "name": "ГБУ ДО \"Спортивная школа Олимпийского резерва по легкой атлетике\"",
+      "url": "https://max.ru/id1502025530_gos",
+      "icon": "🏃",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "tyazhelaya_atletika",
+      "name": "ГБУ ДО \"СШОР по тяжелой атлетике\"",
+      "url": "https://max.ru/id1502025392_gos",
+      "icon": "🏋️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "fechtovanie",
+      "name": "ГБУ ДО «СШОР по фехтованию»",
+      "url": "https://max.ru/id1502046868_gos",
+      "icon": "🤺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "gimnastika",
+      "name": "ГБУ ДО \"Спортивная школа по художественной гимнастике\"",
+      "url": "https://max.ru/id1501034154_gos",
+      "icon": "🤸",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "edinoborstva",
+      "name": "ГБУ ДО «Спортивная школа единоборств»",
+      "url": "https://max.ru/id1514002110_gos",
+      "icon": "🥋",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "stimul",
+      "name": "ГБУ ДО \"Спортивная школа паралимпийского резерва \"Стимул\"",
+      "url": "https://max.ru/id1513062741_gos",
+      "icon": "♿",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "urozhay",
+      "name": "ГБУ ДО «Спортивная школа «Урожай»",
+      "url": "https://max.ru/id1515910556_gos",
+      "icon": "🌾",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss2",
+      "name": "ГБУ ДО \"Спортивная школа №2\"",
+      "url": "https://max.ru/id1502025360_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss5",
+      "name": "Спортивная Школа №5",
+      "url": "https://max.ru/id1501033785_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "fadzaev",
+      "name": "МБУ ДО \"Спортивная школа им. А. Фадзаева\" Ирафского муниципального района",
+      "url": "https://max.ru/id1508003726_gos",
+      "icon": "🤼",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "dzyudo_mozdok",
+      "name": "МБУДО СШ \"Дзюдо\"г.Моздока",
+      "url": "https://max.ru/id1510010431_gos",
+      "icon": "🥋",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss1_mozdok",
+      "name": "МБУДО СШ№1 г. Моздока",
+      "url": "https://max.ru/id1510011097_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss2_mozdok",
+      "name": "МБУДО Спортивная школа №2 г.Моздока",
+      "url": "https://max.ru/id1510010985_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss_alagir",
+      "name": "МБУДО «СШ» г. Алагир",
+      "url": "https://max.ru/id1514000120_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss1",
+      "name": "МБУ ДО СШ 1",
+      "url": "https://max.ru/id1512009801_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss2_2",
+      "name": "МБУДО СШ 2",
+      "url": "https://max.ru/id1512012346_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "akademia_alania",
+      "name": "Академия Футбола «Алания»",
+      "url": "https://max.ru/id1513060462_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "yunost",
+      "name": "ШКОЛА ФУТБОЛА \"ЮНОСТЬ\" ЧЕМПИОНЫ",
+      "url": "https://max.ru/id1504034113_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "manezh",
+      "name": "ДС «Манеж»",
+      "url": "https://max.ru/id1502017708_gos",
+      "icon": "🏟️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "sok_tedeev",
+      "name": "МБУ \"СОК\" им. Е.М. Тедеева",
+      "url": "https://max.ru/id1512005067_gos",
+      "icon": "🏟️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "sjun",
+      "name": "МБУДО \"СЮН\" Пригородного муниципального района РСО - Алания",
+      "url": "https://max.ru/id1512010902_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
-        "culture"
+        "sport"
       ]
     },
     {
-      "id": "nnb",
-      "name": "ННБ РСО_А",
-      "url": "https://max.ru/id1501006728_gos",
-      "icon": "📚",
+      "id": "sjn_digora",
+      "name": "МБУ ДО \"СТАНЦИЯ ЮНЫХ НАТУРАЛИСТОВ\" Г. ДИГОРА",
+      "url": "https://max.ru/id1507003917_gos",
+      "icon": "🌱",
       "avatar": "",
+      "group": "",
       "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "gazdanovka",
-      "name": "ГАЗДАНОВКА",
-      "url": "https://max.ru/id1502025018_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "nogdzau",
-      "name": "НОГДЗАУ",
-      "url": "https://max.ru/id1501003290_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "cbs_vlk",
-      "name": "\"МБУК ЦБС г.Владикавказа\"",
-      "url": "https://max.ru/id1513031920_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "cbs_prigorod",
-      "name": "МБУК \"ЦБС\" Правобережного района",
-      "url": "https://max.ru/id1511019780_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "cbs_digora",
-      "name": "МКУК \"ЦБС\" ДИГОРСКОГО РАЙОНА",
-      "url": "https://max.ru/id1514010802_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "cbs_kirov",
-      "name": "МКУ \"ЦБС\" МО Кировский район",
-      "url": "https://max.ru/id1511019878_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "cbs_prigorod2",
-      "name": "МКУ ЦБС Пригородного муниципального района РСО-Алания",
-      "url": "https://max.ru/id1512017866_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "biblioteka_ardon",
-      "name": "Ардонская библиотечная система",
-      "url": "https://max.ru/id1514010552_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dom_narodnogo_tvorchestva",
-      "name": "ГБУК \"Республиканский Дом народного творчества\" РСО-Алания",
-      "url": "https://max.ru/id1513040498_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dom_druzhby",
-      "name": "Дом дружбы народов РСО-Алания",
-      "url": "https://max.ru/id1513064749_gos",
-      "icon": "🤝",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dvorets_molodezhi",
-      "name": "ГБУК \"Дворец молодежи РСО-Алания\"",
-      "url": "https://max.ru/id1501015352_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_archonskoe",
-      "name": "МКУ \"Дом Культуры Архонского сельского поселения\"",
-      "url": "https://max.ru/id1512017658_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_kirovo",
-      "name": "Дом культуры с.Кирово",
-      "url": "https://max.ru/id1514011274_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_michurino",
-      "name": "Дом культуры с.Мичурино",
-      "url": "https://max.ru/id1514011267_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_rassvet",
-      "name": "Дом культуры с.Рассвет",
-      "url": "https://max.ru/id1514011789_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_dzugayev",
-      "name": "Дом культуры им.Б.Дзугаева",
-      "url": "https://max.ru/id1514011820_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_fiagdon",
-      "name": "Дом культуры с.Фиагдон",
-      "url": "https://max.ru/id1514011549_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_kadgaron",
-      "name": "Дом культуры с.Кадгарон",
-      "url": "https://max.ru/id1514011718_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "vmc_cks",
-      "name": "ВМБУК ЦКС",
-      "url": "https://max.ru/id1516613980_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_krasnogorskoe",
-      "name": "МКУК \"ДК Красногорского сельского поселения\"",
-      "url": "https://max.ru/id1514011570_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_zavodskoy",
-      "name": "МБУК Дом культуры п. Заводской",
-      "url": "https://max.ru/id1513031912_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_nart",
-      "name": "Дом культуры с.Нарт",
-      "url": "https://max.ru/id1514011771_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_kurtat",
-      "name": "МКУ«Дом культуры»Куртатского с/п",
-      "url": "https://max.ru/id1512017810_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_komgaron",
-      "name": "МКУ ДК Комгарон",
-      "url": "https://max.ru/id1512017834_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "dk_mayskoe",
-      "name": "МКУ Дом Культуры с.Майское",
-      "url": "https://max.ru/id1500003717_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "cks_digora",
-      "name": "МКУК \"ЦКС ДИГОРСКОГО РАЙОНА\"",
-      "url": "https://max.ru/id1514010785_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "rdk_ardon",
-      "name": "Ардонский РДК",
-      "url": "https://max.ru/id1514010560_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "orchestra",
-      "name": "Оркестр народных инструментов имени Б.Газданова",
-      "url": "https://max.ru/id1515907049_gos",
-      "icon": "🎻",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "kazaki_tereka",
-      "name": "ГБУК \"АНСАМБЛЬ \"КАЗАКИ ТЕРЕКА\"",
-      "url": "https://max.ru/id1510025050_gos",
-      "icon": "🐴",
-      "avatar": "",
-      "categories": [
-        "culture"
-      ]
-    },
-    {
-      "id": "upravlenie_kultury_vlk",
-      "name": "Управление культуры АМС г.Владикавказа",
-      "url": "https://max.ru/id1501005570_gos",
-      "icon": "🎭",
-      "avatar": "",
-      "categories": [
-        "culture",
-        "selfgov"
-      ]
-    },
-    {
-      "id": "upravlenie_kultury_ardon",
-      "name": "Управление культуры Ардонского района",
-      "url": "https://max.ru/id1506004795_gos",
-      "icon": "🎭",
-      "avatar": "",
-      "categories": [
-        "culture",
-        "selfgov"
-      ]
-    },
-    {
-      "id": "upravlenie_kultury_digora",
-      "name": "УПРАВЛЕНИЕ КУЛЬТУРЫ АМС ДИГОРСКОГО МУНИЦИПАЛЬНОГО РАЙОНА",
-      "url": "https://max.ru/id1507002470_gos",
-      "icon": "🎭",
-      "avatar": "",
-      "categories": [
-        "culture",
-        "selfgov"
+        "sport"
       ]
     },
     {
@@ -5411,6 +1182,7 @@
       "url": "https://max.ru/id1510015486_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5421,6 +1193,7 @@
       "url": "https://max.ru/id1512015033_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5431,6 +1204,7 @@
       "url": "https://max.ru/id1511018169_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5441,6 +1215,7 @@
       "url": "https://max.ru/id1514006700_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5451,6 +1226,7 @@
       "url": "https://max.ru/id1514006676_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5461,6 +1237,7 @@
       "url": "https://max.ru/id1516619100_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5471,6 +1248,7 @@
       "url": "https://max.ru/id1515918788_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5481,6 +1259,7 @@
       "url": "https://max.ru/id1516619131_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5491,6 +1270,7 @@
       "url": "https://max.ru/id1514003153_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5501,6 +1281,7 @@
       "url": "https://max.ru/id1514003160_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5511,16 +1292,7 @@
       "url": "https://max.ru/id1510016320_gos",
       "icon": "🏠",
       "avatar": "",
-      "categories": [
-        "social"
-      ]
-    },
-    {
-      "id": "dom_veteranov",
-      "name": "ГКУ \"ДОМ ВЕТЕРАНОВ\"",
-      "url": "https://max.ru/id1516619653_gos2",
-      "icon": "🎖️",
-      "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5531,6 +1303,7 @@
       "url": "https://max.ru/id1516618995_gos",
       "icon": "🏠",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5541,6 +1314,7 @@
       "url": "https://max.ru/id1515916526_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5551,6 +1325,7 @@
       "url": "https://max.ru/id1512014400_gos",
       "icon": "❤️",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5561,6 +1336,7 @@
       "url": "https://max.ru/id1510008979_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5571,6 +1347,7 @@
       "url": "https://max.ru/id1515918361_gos",
       "icon": "❤️",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5581,6 +1358,7 @@
       "url": "https://max.ru/id1504034032_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5591,6 +1369,7 @@
       "url": "https://max.ru/id1513075010_gos",
       "icon": "☀️",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5601,6 +1380,7 @@
       "url": "https://max.ru/id1513038844_gos",
       "icon": "👨‍‍👧",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5611,6 +1391,7 @@
       "url": "https://max.ru/id1503015100_gos",
       "icon": "❤️",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5621,6 +1402,7 @@
       "url": "https://max.ru/id1505005612_gos",
       "icon": "🏔️",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5631,6 +1413,7 @@
       "url": "https://max.ru/id1516619653_gos",
       "icon": "🤝",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5641,6 +1424,7 @@
       "url": "https://max.ru/id1516619004_gos",
       "icon": "👶",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5651,6 +1435,7 @@
       "url": "https://max.ru/id1513067838_gos",
       "icon": "📊",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
       ]
@@ -5661,479 +1446,9 @@
       "url": "https://max.ru/dobrokdm_bot",
       "icon": "❤️",
       "avatar": "",
+      "group": "",
       "categories": [
         "social"
-      ]
-    },
-    {
-      "id": "vodokanal_bot",
-      "name": "ГУП «Водоканал» РСО-Алания",
-      "url": "https://max.ru/gupvodokanal_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "vodokanal",
-        "bots"
-      ]
-    },
-    {
-      "id": "eirc_fuel",
-      "name": "Топливные карты ЕИРЦ",
-      "url": "https://eirc15.ru/",
-      "icon": "⛽",
-      "avatar": "",
-      "categories": [
-        "fuel"
-      ]
-    },
-    {
-      "id": "sever_osetia",
-      "name": "Республиканская газета \"Северная Осетия\"",
-      "url": "https://max.ru/id1501006809_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "ruhs",
-      "name": "Газета \"РУХС\"",
-      "url": "https://max.ru/id1500019347_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "rastdzinad",
-      "name": "Газета \"Растдзинад\"",
-      "url": "https://max.ru/id1504031916_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "slovo",
-      "name": "Газета \"Слово\"",
-      "url": "https://max.ru/id1504015103_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "razma",
-      "name": "Газета \"Размæ/Вперед\"",
-      "url": "https://max.ru/id1500019516_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "fidiuag",
-      "name": "Газета \"Фидиуӕг\" (\"Глашатай\") Пригородного района РСО-А",
-      "url": "https://max.ru/id1512015925_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "iraf_gaz",
-      "name": "Газета \"Ираф\"",
-      "url": "https://max.ru/id1508002095_gos",
-      "icon": "📰",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "zhizn_pravoberezhya",
-      "name": "Редакция газеты \"Жизнь Правобережья\"",
-      "url": "https://max.ru/id1500019805_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "digoria_news",
-      "name": "Digoria NEWS",
-      "url": "https://max.ru/id1500017854_gos",
-      "icon": "📡",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "ir_inform",
-      "name": "Ир Информ",
-      "url": "https://max.ru/id1501003607_gos",
-      "icon": "📡",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "mah_dug",
-      "name": "Журнал \"Мах дуг\"",
-      "url": "https://max.ru/id1502008950_gos",
-      "icon": "📖",
-      "avatar": "",
-      "categories": [
-        "media"
-      ]
-    },
-    {
-      "id": "ams_vlk",
-      "name": "АМС г. Владикавказа",
-      "url": "https://max.ru/id1501002346_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_mozdok",
-      "name": "АМС Моздокского района",
-      "url": "https://max.ru/id1510007380_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_digora",
-      "name": "АМС Дигорского муниципального района",
-      "url": "https://max.ru/id1507002423_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_alagir",
-      "name": "АМС Алагирского муниципального района",
-      "url": "https://max.ru/id1505006052_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_ardon",
-      "name": "АМС Ардонского района",
-      "url": "https://max.ru/id1506003030_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_kirov",
-      "name": "АМС Кировского муниципального района",
-      "url": "https://max.ru/id1509000622_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_iraf",
-      "name": "АМС Ирафского муниципального района",
-      "url": "https://max.ru/id1508002546_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "pravober",
-      "name": "Pravober",
-      "url": "https://max.ru/id1511006879_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_ardon_gor",
-      "name": "АМС Ардонского городского поселения",
-      "url": "https://max.ru/id1506003368_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_digora_gor",
-      "name": "АМС Дигорского городского поселения Дигорского района РСО-Алания",
-      "url": "https://max.ru/id1507002455_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_mozdok_gor",
-      "name": "АМС Моздокское городское поселение",
-      "url": "https://max.ru/id1510008224_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_kosta",
-      "name": "АМС КОСТАЕВСКОГО СЕЛЬСКОГО ПОСЕЛЕНИЯ",
-      "url": "https://max.ru/id1506003135_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_kadgaron",
-      "name": "АМС с.Кадгарон",
-      "url": "https://max.ru/id1506003128_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_fiagdon",
-      "name": "АМС с.Фиагдон Ардонского района",
-      "url": "https://max.ru/id1506003150_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_michurino",
-      "name": "АМС с.Мичурино Ардонского района",
-      "url": "https://max.ru/id1506003110_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_rassvet",
-      "name": "АМС с.Рассвет Ардонского района",
-      "url": "https://max.ru/id1506003167_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_krasnogor",
-      "name": "АМС с.Красногор Ардонского района",
-      "url": "https://max.ru/id1506003174_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_kirovo",
-      "name": "АМС с.Кирово Ардонского района",
-      "url": "https://max.ru/id1506003142_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_mahchesk",
-      "name": "АМС Махческого сельского поселения",
-      "url": "https://max.ru/id1508002539_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_dur_dur",
-      "name": "АМС Дур-Дурского сельского поселения РСО-Алания",
-      "url": "https://max.ru/id1507002448_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_kiev",
-      "name": "АМС Киевского сельского поселения",
-      "url": "https://max.ru/id1510008094_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_zilgi",
-      "name": "АМС Зильги",
-      "url": "https://max.ru/id1511006886_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_beslan",
-      "name": "AMS_BESLAN",
-      "url": "https://max.ru/id1511006861_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_olgin",
-      "name": "АМС с.Ольгинское Правобережного района",
-      "url": "https://max.ru/id1511005018_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "ams_komsomolsk",
-      "name": "Официальная страница Администрации Комсомольского сельского поселения Кировского района ⚪️?? Глава АМС Авлохов Валерий Гаврилович.",
-      "url": "https://max.ru/id1509000453_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "admin_gizel",
-      "name": "Администрация с.Гизель",
-      "url": "https://max.ru/id1512008124_gos",
-      "icon": "🏘️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "uo_ams_vlk",
-      "name": "УО АМС г.Владикавказ",
-      "url": "https://max.ru/id1501002113_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "uo_ams_kirov",
-      "name": "УО АМС КИРОВСКОГО МУНИЦИПАЛЬНОГО РАЙОНА",
-      "url": "https://max.ru/id1509000750_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "uofs_pravoberezh",
-      "name": "УОФС АМС ПРАВОБЕРЕЖНОГО РАЙОНА РСО-АЛАНИЯ",
-      "url": "https://max.ru/id1511018433_gos",
-      "icon": "🏛️",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "uo_obr_mozdok",
-      "name": "Управление образования Администрации местного самоуправления Моздокского муниципального района",
-      "url": "https://max.ru/id1510008263_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "uo_obr_digora",
-      "name": "Управление образования АМС Дигорского муниципального района",
-      "url": "https://max.ru/id1507002127_gos",
-      "icon": "📚",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "uo_obr_prigorod",
-      "name": "Управление образования АМС Пригородного Муниципального района РСО-Алания",
-      "url": "https://max.ru/id1512006737_gos",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "selfgov"
-      ]
-    },
-    {
-      "id": "bot_mfc",
-      "name": "МФЦ РСО-Алания",
-      "url": "https://max.ru/mfcrsoalania_max_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_sogma",
-      "name": "СОГМА",
-      "url": "https://max.ru/sogma_official_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
       ]
     },
     {
@@ -6142,116 +1457,7 @@
       "url": "https://max.ru/mintrudrsoa_bot",
       "icon": "🤖",
       "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_skgmi",
-      "name": "Чат-бот СКГМИ (ГТУ)",
-      "url": "https://max.ru/skgmi_gtu_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_goszhilstroynadzor",
-      "name": "Госжилстройнадзор РСО-Алания",
-      "url": "https://max.ru/goszhilstroinadzorso_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_uspeh",
-      "name": "ООО ВДУ Успех",
-      "url": "https://max.ru/id1513086125_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_stimul",
-      "name": "ООО \"УК Стимул Плюс\"",
-      "url": "https://max.ru/id1500008828_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_prioritet",
-      "name": "ООО\"УЖК\"Приоритет\"",
-      "url": "https://max.ru/id1510014250_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_transport",
-      "name": "Осетия Транспорт",
-      "url": "https://max.ru/osetiatransport_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_dom_tvorch",
-      "name": "\"Дом детского творчества\"",
-      "url": "https://max.ru/domtvorchestva13_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_skazka_mozdok",
-      "name": "ДЕТСКИЙ САД \"СКАЗКА\" г. МОЗДОК",
-      "url": "https://max.ru/skazka_mozdok_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_sch_mayskoe",
-      "name": "МБОУ \"СОШ с.Майское\"",
-      "url": "https://max.ru/id1512010860_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_minnats",
-      "name": "Миннац РСО-Алания чат-бот",
-      "url": "https://max.ru/minnats_chatbot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_subboti_spo",
-      "name": "Субботы СПО",
-      "url": "https://max.ru/subboti_spo_bot",
-      "icon": "",
-      "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
@@ -6262,226 +1468,18 @@
       "url": "https://max.ru/minjkh_rso_a_bot",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_era",
-      "name": "ООО \"Эра\"",
-      "url": "https://max.ru/id1516614581_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_ds_beslan",
-      "name": "МБДОУ \"ДЕТСКИЙ САД г. БЕСЛАНА\"",
-      "url": "https://max.ru/detski_sadik8_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_kolobok",
-      "name": "МБДОУ - детский сад \"Колобок\" п. Притеречного",
-      "url": "https://max.ru/my_max_doubot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_sh_inter_vlk",
-      "name": "ГБОУ школа-интернат г.Владикавказ",
-      "url": "https://max.ru/nin_max_bot",
+      "id": "bot_minnats",
+      "name": "Миннац РСО-Алания чат-бот",
+      "url": "https://max.ru/minnats_chatbot",
       "icon": "🤖",
       "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_gid_alania",
-      "name": "ГИД-Алания",
-      "url": "https://max.ru/alania_tour_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_uslugi_obr",
-      "name": "Услуги образования в РСО-Алании",
-      "url": "https://max.ru/rno_obr_uslugi_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_obrashenie_min",
-      "name": "Обращение к министру образования",
-      "url": "https://max.ru/ella0297_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_lk_student",
-      "name": "Личный кабинет студента",
-      "url": "https://max.ru/sogma_student_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_minzdrav",
-      "name": "Запись на прием к врачу Минздрав РСО-Алания",
-      "url": "https://max.ru/minzdrav_rso_alania_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_digitalrno",
-      "name": "DigitalRNO",
-      "url": "https://max.ru/digitalrno_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_kokoeva",
-      "name": "исполняющий обязанности заведующего",
-      "url": "https://max.ru/kokoeva_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_gid_turizm",
-      "name": "Минэкономразвития РСО-Алании в сфере туризма",
-      "url": "https://max.ru/gid_alania_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_ipu",
-      "name": "Данные по ИПУ",
-      "url": "https://max.ru/id1515913959_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_afisha",
-      "name": "Афиша",
-      "url": "https://max.ru/afishaminkultrso_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_sever_osetia",
-      "name": "Газета \"Северная Осетия\"",
-      "url": "https://max.ru/sevosetia_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_mbou1",
-      "name": "МБДОУ 1",
-      "url": "https://max.ru/kokoevaa_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_kroc",
-      "name": "ГБОУ КРОЦ чат-бот",
-      "url": "https://max.ru/gbou_kroc_chat_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_vke",
-      "name": "ГБПОУ \"Владикавказский Колледж Электроники\"",
-      "url": "https://max.ru/vke_helper_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_versina",
-      "name": "ООО \"ВЕРШИНА\"",
-      "url": "https://max.ru/id1513085386_bot",
-      "icon": "",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_boks",
-      "name": "ГБУ ДО \"СШОР ПО БОКСУ\"",
-      "url": "https://max.ru/school_boks_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_testvke",
-      "name": "тестовый бот",
-      "url": "https://max.ru/testvke_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_nadejda",
-      "name": "ГБОУ школа-интернат \" Надежда\"",
-      "url": "https://max.ru/nadejda5_bot",
-      "icon": "",
-      "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
@@ -6492,167 +1490,335 @@
       "url": "https://max.ru/minsportrsobot",
       "icon": "🤖",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_terskay",
-      "name": "МБОУ СОШ ст. Терской",
-      "url": "https://max.ru/terskay_shkola_bot",
+      "id": "bot_sogma",
+      "name": "СОГМА",
+      "url": "https://max.ru/sogma_official_bot",
       "icon": "🤖",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_ams",
-      "name": "АМС",
-      "url": "https://max.ru/admin_ams_bot",
+      "id": "bot_skgmi",
+      "name": "Чат-бот СКГМИ (ГТУ)",
+      "url": "https://max.ru/skgmi_gtu_bot",
       "icon": "🤖",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_romashka",
-      "name": "Ромашка",
-      "url": "https://max.ru/douromashka_bot",
+      "id": "bot_vke",
+      "name": "ГБПОУ \"Владикавказский Колледж Электроники\"",
+      "url": "https://max.ru/vke_helper_bot",
       "icon": "🤖",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_raspisanie",
-      "name": "Расписание СКГМИ (ГТУ)",
-      "url": "https://max.ru/skgmi_results_bot",
-      "icon": "🤖",
+      "id": "rkb",
+      "name": "РКБ",
+      "url": "https://max.ru/rkb_notification_bot",
+      "icon": "🚑",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_piramida",
-      "name": "Пирамида",
-      "url": "https://max.ru/id1513081423_bot",
-      "icon": "🤖",
+      "id": "skmmc",
+      "name": "СК ММЦ (г. Беслан) — бот",
+      "url": "https://max.ru/skmmcmed_bot",
+      "icon": "🏥",
       "avatar": "",
+      "group": "",
       "categories": [
         "bots"
       ]
     },
     {
-      "id": "bot_rastdzinad",
+      "id": "transport_electric",
+      "name": "Расписание электротранспорта",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/electrictransportschedule",
+      "icon": "🚋",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "transport_vld",
+      "name": "Городские маршруты Владикавказа",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/vldmunicipalschedule",
+      "icon": "🚌",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "transport_alania",
+      "name": "Муниципальные маршруты РСО-Алания",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/alaniamunicipalschedule",
+      "icon": "🚌",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "transport_intermunicipal",
+      "name": "Межмуниципальные маршруты",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/intmunicipalschedule",
+      "icon": "🚍",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "gazeta_vladikavkaz",
+      "name": "Газета \"Владикавказ\"",
+      "url": "https://max.ru/id1502025836_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "sever_osetia",
+      "name": "Республиканская газета \"Северная Осетия\"",
+      "url": "https://max.ru/id1501006809_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "ruhs",
+      "name": "Газета \"РУХС\"",
+      "url": "https://max.ru/id1500019347_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "rastdzinad",
       "name": "Газета \"Растдзинад\"",
-      "url": "https://max.ru/rastdzinad_bot",
-      "icon": "🤖",
+      "url": "https://max.ru/id1504031916_gos",
+      "icon": "📰",
       "avatar": "",
+      "group": "",
       "categories": [
-        "bots"
+        "media"
       ]
     },
     {
-      "id": "bot_test",
-      "name": "тест",
-      "url": "https://max.ru/testirovanie_mi_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_ufk",
-      "name": "УФК по Республике Северная Осетия-Алания",
-      "url": "https://max.ru/ufk_alania_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_ic_su_sk",
-      "name": "ИЦ СУ СК России по РСО-Алания",
-      "url": "https://max.ru/rso_alania_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_biblioteka",
-      "name": "\"МБУК ЦБС г.Владикавказа\"",
-      "url": "https://max.ru/biblioteka283_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_dshi_sunja",
-      "name": "МБУ ДО \"ДШИ с.Сунжа\"",
-      "url": "https://max.ru/shola_iskusstv_synja_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_desdemona",
-      "name": "Desdemona",
-      "url": "https://max.ru/desdemona_bot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "bot_dev",
-      "name": "dev",
-      "url": "https://max.ru/gbucitvladbot",
-      "icon": "🤖",
-      "avatar": "",
-      "categories": [
-        "bots"
-      ]
-    },
-    {
-      "id": "domoupravlenie",
-      "name": "ВМБУ \"Домоуправление\"",
-      "url": "https://max.ru/id1500014405_gos",
-      "icon": "🏢",
-      "avatar": "",
-      "categories": [
-        "other"
-      ]
-    },
-    {
-      "id": "spetspu",
-      "name": "СпецПУ",
-      "url": "https://max.ru/id1512008283_gos",
+      "id": "slovo",
+      "name": "Газета \"Слово\"",
+      "url": "https://max.ru/id1504015103_gos",
       "icon": "",
       "avatar": "",
+      "group": "",
       "categories": [
-        "other"
+        "media"
+      ]
+    },
+    {
+      "id": "razma",
+      "name": "Газета \"Размæ/Вперед\"",
+      "url": "https://max.ru/id1500019516_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "fidiuag",
+      "name": "Газета \"Фидиуӕг\" (\"Глашатай\") Пригородного района РСО-А",
+      "url": "https://max.ru/id1512015925_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "iraf_gaz",
+      "name": "Газета \"Ираф\"",
+      "url": "https://max.ru/id1508002095_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "zhizn_pravoberezhya",
+      "name": "Редакция газеты \"Жизнь Правобережья\"",
+      "url": "https://max.ru/id1500019805_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "digoria_news",
+      "name": "Digoria NEWS",
+      "url": "https://max.ru/id1500017854_gos",
+      "icon": "📡",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "ir_inform",
+      "name": "Ир Информ",
+      "url": "https://max.ru/id1501003607_gos",
+      "icon": "📡",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "mah_dug",
+      "name": "Журнал \"Мах дуг\"",
+      "url": "https://max.ru/id1502008950_gos",
+      "icon": "📖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "ams_vlk",
+      "name": "АМС г. Владикавказа",
+      "url": "https://max.ru/id1501002346_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_alagir",
+      "name": "АМС Алагирского муниципального района",
+      "url": "https://max.ru/id1505006052_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_ardon",
+      "name": "АМС Ардонского района",
+      "url": "https://max.ru/id1506003030_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_digora",
+      "name": "АМС Дигорского муниципального района",
+      "url": "https://max.ru/id1507002423_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_iraf",
+      "name": "АМС Ирафского муниципального района",
+      "url": "https://max.ru/id1508002546_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_kirov",
+      "name": "АМС Кировского муниципального района",
+      "url": "https://max.ru/id1509000622_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_mozdok",
+      "name": "АМС Моздокского района",
+      "url": "https://max.ru/id1510007380_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "pravober",
+      "name": "АМС Правобережного района",
+      "url": "https://max.ru/id1511006879_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
       ]
     }
   ],
   "featured": [
     "governor",
     "gov",
-    "comdigital",
-    "mchs",
-    "minzdrav",
+    "parlament",
     "mfc"
   ]
 }
