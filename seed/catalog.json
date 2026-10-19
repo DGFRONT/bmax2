@@ -1,0 +1,1791 @@
+{
+  "categories": [
+    {
+      "id": "fuel",
+      "title": "Карта наличия топлива",
+      "icon": "⛽",
+      "wide": true,
+      "link": "eirc_fuel",
+      "groups": []
+    },
+    {
+      "id": "mfc_bot",
+      "title": "Чат-бот МФЦ",
+      "icon": "👨‍💼",
+      "wide": false,
+      "link": "bot_mfc",
+      "groups": []
+    },
+    {
+      "id": "doctor",
+      "title": "Запись к врачу",
+      "icon": "🩺",
+      "wide": false,
+      "link": "bot_minzdrav",
+      "groups": []
+    },
+    {
+      "id": "government",
+      "title": "Органы власти РСО-Алания",
+      "icon": "🏛️",
+      "wide": false,
+      "groups": [
+        "Министерства",
+        "Комитеты",
+        "Службы и управления"
+      ],
+      "link": ""
+    },
+    {
+      "id": "health",
+      "title": "Здравоохранение",
+      "icon": "🏥",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "universities",
+      "title": "Вузы",
+      "icon": "🎓",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "colleges",
+      "title": "Колледжи (СПО)",
+      "icon": "📚",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "culture",
+      "title": "Культура",
+      "icon": "🎭",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "sport",
+      "title": "Спорт",
+      "icon": "⚽",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "social",
+      "title": "Социальная защита",
+      "icon": "🤝",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "bots",
+      "title": "Боты региона",
+      "icon": "🤖",
+      "wide": false,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "vodokanal",
+      "title": "ГУП «Водоканал» РСО-Алания",
+      "icon": "💧",
+      "wide": true,
+      "link": "vodokanal_bot",
+      "groups": []
+    },
+    {
+      "id": "transport",
+      "title": "Расписание общественного транспорта",
+      "icon": "🚌",
+      "wide": true,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "media",
+      "title": "СМИ",
+      "icon": "📰",
+      "wide": true,
+      "link": "",
+      "groups": []
+    },
+    {
+      "id": "selfgov",
+      "title": "Местное самоуправление",
+      "icon": "🏘️",
+      "wide": true,
+      "link": "",
+      "groups": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "governor",
+      "name": "Глава РСО-Алания",
+      "url": "https://max.ru/sergeimeniaylo",
+      "icon": "👤",
+      "avatar": "gsm.jpg",
+      "group": "",
+      "categories": []
+    },
+    {
+      "id": "gov",
+      "name": "Правительство РСО-Алания",
+      "url": "https://max.ru/alania_gov",
+      "icon": "🏛️",
+      "avatar": "building.jpg",
+      "group": "",
+      "categories": []
+    },
+    {
+      "id": "parlament",
+      "name": "Парламент Республики Северная Осетия-Алания",
+      "url": "https://max.ru/id1502009231_gos",
+      "icon": "🏛️",
+      "avatar": "",
+      "group": "",
+      "categories": []
+    },
+    {
+      "id": "mfc",
+      "name": "МФЦ РСО-Алания",
+      "url": "https://max.ru/id1515922174_gos",
+      "icon": "👨‍💼",
+      "avatar": "mfc.jpg",
+      "group": "",
+      "categories": []
+    },
+    {
+      "id": "eirc_fuel",
+      "name": "Карта наличия топлива ЕИРЦ",
+      "url": "https://eirc15.ru/",
+      "icon": "⛽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "fuel"
+      ]
+    },
+    {
+      "id": "bot_mfc",
+      "name": "Чат-бот МФЦ РСО-Алания",
+      "url": "https://max.ru/mfcrsoalania_max_bot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots",
+        "mfc_bot"
+      ]
+    },
+    {
+      "id": "bot_minzdrav",
+      "name": "Запись на приём к врачу (Минздрав РСО-Алания)",
+      "url": "https://max.ru/minzdrav_rso_alania_bot",
+      "icon": "🩺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots",
+        "doctor"
+      ]
+    },
+    {
+      "id": "vodokanal_bot",
+      "name": "ГУП «Водоканал» РСО-Алания",
+      "url": "https://max.ru/gupvodokanal_bot",
+      "icon": "💧",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "vodokanal"
+      ]
+    },
+    {
+      "id": "minimushestvo",
+      "name": "Министерство государственного имущества и земельных отношений РСО-Алания",
+      "url": "https://max.ru/id1502008943_gos",
+      "icon": "🏢",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "mingkh",
+      "name": "Министерство ЖКХ, топлива и энергетики РСО-Алания",
+      "url": "https://max.ru/mingkh15",
+      "icon": "🏠",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minzdrav",
+      "name": "Министерство здравоохранения РСО-Алания",
+      "url": "https://max.ru/minzdravrso",
+      "icon": "🏥",
+      "avatar": "building.jpg",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minkult_gov",
+      "name": "Министерство культуры РСО-Алания",
+      "url": "https://max.ru/minkultrsoalania15",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minobr_gov",
+      "name": "Министерство образования и науки РСО-Алания",
+      "url": "https://max.ru/minobrnauki15",
+      "icon": "📚",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minpriroda",
+      "name": "Министерство природных ресурсов и экологии РСО-Алания",
+      "url": "https://max.ru/id1513060134_gos",
+      "icon": "🌲",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minprom",
+      "name": "Министерство промышленности и инвестиций РСО-Алания",
+      "url": "https://max.ru/id1513063939_gos",
+      "icon": "🏭",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minnac",
+      "name": "Министерство по национальной политике и внешним связям РСО-Алания",
+      "url": "https://max.ru/id1513035402_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minselselhoz",
+      "name": "Министерство сельского хозяйства РСО-Алания",
+      "url": "https://max.ru/id1501028753_gos",
+      "icon": "🌾",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minstroy",
+      "name": "Министерство строительства и архитектуры РСО-Алания",
+      "url": "https://max.ru/id1513057702_gos",
+      "icon": "🏗️",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minfiz",
+      "name": "Министерство физической культуры и спорта РСО-Алания",
+      "url": "https://max.ru/id1513057815_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minfin",
+      "name": "Министерство финансов РСО-Алания",
+      "url": "https://max.ru/id1501007545_gos",
+      "icon": "💰",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "minecon",
+      "name": "Министерство экономического развития РСО-Алания",
+      "url": "https://max.ru/id1502023684_gos",
+      "icon": "📈",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comroad",
+      "name": "Комитет дорожного хозяйства РСО-Алания",
+      "url": "https://max.ru/id1515912930_gos",
+      "icon": "🛣️",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comprint",
+      "name": "Комитет по делам печати и массовых коммуникаций",
+      "url": "https://max.ru/id1513063921_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comguard",
+      "name": "Комитет по охране объектов культурного наследия",
+      "url": "https://max.ru/id1513056561_gos",
+      "icon": "🛡️",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comgochs",
+      "name": "Комитет по делам гражданской обороны и чрезвычайным ситуациям РСО-Алания",
+      "url": "https://max.ru/id1500022822_gos",
+      "icon": "🚨",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comyouth",
+      "name": "Комитет по делам молодежи",
+      "url": "https://max.ru/id1513057808_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comemployment",
+      "name": "Комитет по занятости населения",
+      "url": "https://max.ru/id1515910940_gos",
+      "icon": "💼",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comdigital",
+      "name": "Комитет цифрового развития РСО-Алания",
+      "url": "https://max.ru/id1513063914_gos",
+      "icon": "💻",
+      "avatar": "prl.jpg",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "archive",
+      "name": "Архивная служба РСО-Алания",
+      "url": "https://max.ru/id1513003873_gos",
+      "icon": "🔍",
+      "avatar": "",
+      "group": "Службы и управления",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "tarify",
+      "name": "Региональная служба по тарифам",
+      "url": "https://max.ru/id1515909328_gos",
+      "icon": "📊",
+      "avatar": "",
+      "group": "Службы и управления",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "kru",
+      "name": "Контрольно-ревизионное управление",
+      "url": "https://max.ru/id1513012099_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "Службы и управления",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "zags",
+      "name": "Управление ЗАГС",
+      "url": "https://max.ru/id1515907320_gos",
+      "icon": "💍",
+      "avatar": "",
+      "group": "Службы и управления",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "rkbsmp",
+      "name": "ГБУЗ РКБСМП г. Владикавказ",
+      "url": "https://max.ru/id1501002890_gos",
+      "icon": "🚑",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "prigorod_crb",
+      "name": "Пригородная ЦРБ",
+      "url": "https://max.ru/id1511014164_gos",
+      "icon": "🏥",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "skmmc_2",
+      "name": "ФГБУ «СК ММЦ» Минздрава России (г. Беслан)",
+      "url": "https://max.ru/id1511017599_gos",
+      "icon": "🏥",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "ardon_crb",
+      "name": "ГБУЗ Ардонская ЦРБ",
+      "url": "https://max.ru/id1506003061_gos",
+      "icon": "🏥",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "ftiziopulm",
+      "name": "Фтизиопульмонология РСО",
+      "url": "https://max.ru/id1501008612_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "narkodispanser",
+      "name": "Республиканский Наркодиспансер",
+      "url": "https://max.ru/id1501008073_gos",
+      "icon": "💊",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "red",
+      "name": "ГБУЗ \"РЭД\" МЗ РСО-А (Эндокринологический диспансер)",
+      "url": "https://max.ru/id1501024759_gos",
+      "icon": "🩺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "rspk",
+      "name": "ГБУЗ \"РСПК\" МЗ РСО-Алания",
+      "url": "https://max.ru/id1501007680_gos",
+      "icon": "🩺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "rcozmp",
+      "name": "ГБУЗ «РЦОЗМП» МЗ РСО-Алания",
+      "url": "https://max.ru/id1501002297_gos",
+      "icon": "🩺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "oftalmocentr",
+      "name": "ГАУЗ Республиканский офтальмологический центр МЗ РСО-Алания",
+      "url": "https://max.ru/id1513031126_gos",
+      "icon": "👁️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "det_polikl4",
+      "name": "ГБУЗ «Детская поликлиника 4» МЗ РСО-Алания",
+      "url": "https://max.ru/id1501003082_gos",
+      "icon": "👶",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "det_polikl1",
+      "name": "ГБУЗ «Детская поликлиника №1» МЗ РСО-Алания",
+      "url": "https://max.ru/id1501003100_gos",
+      "icon": "👶",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "polikl1",
+      "name": "ГБУЗ \"ПОЛИКЛИНИКА №1\" МЗ РСО-АЛАНИЯ",
+      "url": "https://max.ru/id1502008894_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "san_sosnovaya",
+      "name": "ГБУ Санаторий \"Сосновая роща\" Владикавказ",
+      "url": "https://max.ru/id1500002590_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "san_osetia",
+      "name": "ГБУ \"Санаторий \"Осетия\"",
+      "url": "https://max.ru/id1501035863_gos",
+      "icon": "🏔️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "centr_gigieny",
+      "name": "ФБУЗ «Центр гигиены и эпидемиологии в РСО-Алания»",
+      "url": "https://max.ru/id1516608203_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "pitaniya",
+      "name": "Государственное автономное учреждение «Республиканский центр лечебного и профилактического питания» МЗ",
+      "url": "https://max.ru/id1513064629_gos",
+      "icon": "🍎",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "health"
+      ]
+    },
+    {
+      "id": "sogu",
+      "name": "СОГУ им. К.Л. Хетагурова",
+      "url": "https://max.ru/id1502009030_gos",
+      "icon": "🎓",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "universities"
+      ]
+    },
+    {
+      "id": "skgmi",
+      "name": "СКГМИ (ГТУ)",
+      "url": "https://max.ru/id1501002522_biz",
+      "icon": "🎓",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "universities"
+      ]
+    },
+    {
+      "id": "sogma",
+      "name": "СОГМА",
+      "url": "https://max.ru/id1501003195_biz",
+      "icon": "🎓",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "universities"
+      ]
+    },
+    {
+      "id": "pedcollege",
+      "name": "Северо-Осетинский педагогический колледж",
+      "url": "https://max.ru/id1513084551_gos",
+      "icon": "👨‍🏫",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "medcollege",
+      "name": "Северо-Осетинский медицинский колледж",
+      "url": "https://max.ru/id1501007880_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "agrotech",
+      "name": "Северо-Кавказский аграрно-технологический колледж",
+      "url": "https://max.ru/id1506003199_gos",
+      "icon": "🌾",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "vke",
+      "name": "Владикавказский колледж электроники",
+      "url": "https://max.ru/id1502008911_gos",
+      "icon": "💻",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "emk",
+      "name": "Электромеханический колледж",
+      "url": "https://max.ru/id1509001778_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "pu5",
+      "name": "Профессиональное училище №5",
+      "url": "https://max.ru/id1501007023_gos",
+      "icon": "🔧",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "moztex",
+      "name": "Моздокский механико-технологический техникум",
+      "url": "https://max.ru/id1510008672_gos",
+      "icon": "⚙️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "vtzht",
+      "name": "ВлТЖТ | Владикавказский техникум ж/д транспорта",
+      "url": "https://max.ru/id6165009334_gos",
+      "icon": "🚂",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "college_culture",
+      "name": "ГБУ ПО \"Республиканский колледж культуры\"",
+      "url": "https://max.ru/id1502019102_gos",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "college_art",
+      "name": "ГБУ ПО \"Владикавказский колледж искусств имени Валерия Гергиева\"",
+      "url": "https://max.ru/id1501006580_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "art_school",
+      "name": "Владикавказское художественное училище им.А.Джанаева",
+      "url": "https://max.ru/id1501021564_gos",
+      "icon": "🎨",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "colleges"
+      ]
+    },
+    {
+      "id": "theater_vakhtangov",
+      "name": "Академический русский театр им. Ев. Вахтангова",
+      "url": "https://max.ru/id1502017592_gos",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "theater_thapsaev",
+      "name": "ГБУК \"Северо-Осетинский государственный академический театр им.В.Тхапсаева\"",
+      "url": "https://max.ru/id1504032684_gos",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "sabi_theater",
+      "name": "Театр юного зрителя «Саби»",
+      "url": "https://max.ru/id1503005991_gos",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "amyran_theater",
+      "name": "Молодёжный театр «Амыран»",
+      "url": "https://max.ru/id1504035004_gos",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "digor_theater",
+      "name": "Государственный дигорский драматический театр",
+      "url": "https://max.ru/id1501004135_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "narty_theater",
+      "name": "Конно-драматический театр \"Нарты\"",
+      "url": "https://max.ru/id1501010851_gos",
+      "icon": "🐎",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "national_museum",
+      "name": "Национальный музей РСО-Алания",
+      "url": "https://max.ru/id1502023589_gos",
+      "icon": "🏛️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "museum_tuganov",
+      "name": "Музей имени Туганова",
+      "url": "https://max.ru/id1502045092_gos",
+      "icon": "🏛️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "museum_theater",
+      "name": "Музей театрального искусства",
+      "url": "https://max.ru/id1502045335_gos",
+      "icon": "🎭",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "culture"
+      ]
+    },
+    {
+      "id": "borba_baroev",
+      "name": "ГБУ ДО «СШОР ПО ГРЕКО-РИМСКОЙ БОРЬБЕ ИМЕНИ ХАСАНА МАХАРБЕКОВИЧА БАРОЕВА»",
+      "url": "https://max.ru/id1515919630_gos",
+      "icon": "🤼",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "boks",
+      "name": "ГБУ ДО \"СШОР по боксу\"",
+      "url": "https://max.ru/id1513046901_gos",
+      "icon": "🥊",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "legkaya_atletika",
+      "name": "ГБУ ДО \"Спортивная школа Олимпийского резерва по легкой атлетике\"",
+      "url": "https://max.ru/id1502025530_gos",
+      "icon": "🏃",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "tyazhelaya_atletika",
+      "name": "ГБУ ДО \"СШОР по тяжелой атлетике\"",
+      "url": "https://max.ru/id1502025392_gos",
+      "icon": "🏋️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "fechtovanie",
+      "name": "ГБУ ДО «СШОР по фехтованию»",
+      "url": "https://max.ru/id1502046868_gos",
+      "icon": "🤺",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "gimnastika",
+      "name": "ГБУ ДО \"Спортивная школа по художественной гимнастике\"",
+      "url": "https://max.ru/id1501034154_gos",
+      "icon": "🤸",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "edinoborstva",
+      "name": "ГБУ ДО «Спортивная школа единоборств»",
+      "url": "https://max.ru/id1514002110_gos",
+      "icon": "🥋",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "stimul",
+      "name": "ГБУ ДО \"Спортивная школа паралимпийского резерва \"Стимул\"",
+      "url": "https://max.ru/id1513062741_gos",
+      "icon": "♿",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "urozhay",
+      "name": "ГБУ ДО «Спортивная школа «Урожай»",
+      "url": "https://max.ru/id1515910556_gos",
+      "icon": "🌾",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss2",
+      "name": "ГБУ ДО \"Спортивная школа №2\"",
+      "url": "https://max.ru/id1502025360_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss5",
+      "name": "Спортивная Школа №5",
+      "url": "https://max.ru/id1501033785_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "fadzaev",
+      "name": "МБУ ДО \"Спортивная школа им. А. Фадзаева\" Ирафского муниципального района",
+      "url": "https://max.ru/id1508003726_gos",
+      "icon": "🤼",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "dzyudo_mozdok",
+      "name": "МБУДО СШ \"Дзюдо\"г.Моздока",
+      "url": "https://max.ru/id1510010431_gos",
+      "icon": "🥋",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss1_mozdok",
+      "name": "МБУДО СШ№1 г. Моздока",
+      "url": "https://max.ru/id1510011097_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss2_mozdok",
+      "name": "МБУДО Спортивная школа №2 г.Моздока",
+      "url": "https://max.ru/id1510010985_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss_alagir",
+      "name": "МБУДО «СШ» г. Алагир",
+      "url": "https://max.ru/id1514000120_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss1",
+      "name": "МБУ ДО СШ 1",
+      "url": "https://max.ru/id1512009801_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "ss2_2",
+      "name": "МБУДО СШ 2",
+      "url": "https://max.ru/id1512012346_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "akademia_alania",
+      "name": "Академия Футбола «Алания»",
+      "url": "https://max.ru/id1513060462_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "yunost",
+      "name": "ШКОЛА ФУТБОЛА \"ЮНОСТЬ\" ЧЕМПИОНЫ",
+      "url": "https://max.ru/id1504034113_gos",
+      "icon": "⚽",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "manezh",
+      "name": "ДС «Манеж»",
+      "url": "https://max.ru/id1502017708_gos",
+      "icon": "🏟️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "sok_tedeev",
+      "name": "МБУ \"СОК\" им. Е.М. Тедеева",
+      "url": "https://max.ru/id1512005067_gos",
+      "icon": "🏟️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "sjun",
+      "name": "МБУДО \"СЮН\" Пригородного муниципального района РСО - Алания",
+      "url": "https://max.ru/id1512010902_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "sjn_digora",
+      "name": "МБУ ДО \"СТАНЦИЯ ЮНЫХ НАТУРАЛИСТОВ\" Г. ДИГОРА",
+      "url": "https://max.ru/id1507003917_gos",
+      "icon": "🌱",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "sport"
+      ]
+    },
+    {
+      "id": "kcson_mozdok",
+      "name": "ГБУ «КЦСОН Моздокского района»",
+      "url": "https://max.ru/id1510015486_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_prigorod",
+      "name": "КЦСОН Пригородного района",
+      "url": "https://max.ru/id1512015033_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_pravoberezh",
+      "name": "ГБУ \"КЦСОН Правобережного района\"",
+      "url": "https://max.ru/id1511018169_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_iraf",
+      "name": "ГБУ \"КЦСОН Ирафского района\"",
+      "url": "https://max.ru/id1514006700_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_digora",
+      "name": "ГБУ \"КЦСОН Дигорского района\"",
+      "url": "https://max.ru/id1514006676_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_prom",
+      "name": "КЦСОН Промышленного района г.Владикавказ",
+      "url": "https://max.ru/id1516619100_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_zaterechny",
+      "name": "КЦСОН Затеречного района",
+      "url": "https://max.ru/id1515918788_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "kcson_szr",
+      "name": "ГБУ \"КЦСОН СЗР г. Владикавказ\"",
+      "url": "https://max.ru/id1516619131_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "uszn_digora",
+      "name": "УСЗН по Дигорскому району",
+      "url": "https://max.ru/id1514003153_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "uszn_iraf",
+      "name": "Соцзащита Ирафский район (УСЗН по Ирафскому району)",
+      "url": "https://max.ru/id1514003160_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "dom_inter",
+      "name": "Дом-интернат для пожилых и инвалидов",
+      "url": "https://max.ru/id1510016320_gos",
+      "icon": "🏠",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "soc_priut",
+      "name": "ГБУ \"Социальный приют\"",
+      "url": "https://max.ru/id1516618995_gos",
+      "icon": "🏠",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "feniks",
+      "name": "ГБУ РЦРДИ \"ФЕНИКС\"",
+      "url": "https://max.ru/id1515916526_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "miloserdie",
+      "name": "ГБУ РДСО \"Милосердие\"",
+      "url": "https://max.ru/id1512014400_gos",
+      "icon": "❤️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "amond",
+      "name": "ГКУ СО ЦССВ \"Амонд\" г.Моздок",
+      "url": "https://max.ru/id1510008979_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "zabota",
+      "name": "ГБУ \"РДИ \"Забота\"",
+      "url": "https://max.ru/id1515918361_gos",
+      "icon": "❤️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "sabi",
+      "name": "ГБУ СО \"ЦССВ \"Саби\"",
+      "url": "https://max.ru/id1504034032_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "hury_tyn",
+      "name": "ГКУ \"ЦССВ Хуры Тын\"",
+      "url": "https://max.ru/id1513075010_gos",
+      "icon": "☀️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "moya_semya",
+      "name": "ГБУ «Центр «Моя семья»",
+      "url": "https://max.ru/id1513038844_gos",
+      "icon": "👨‍‍👧",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "dobroe_serdtse",
+      "name": "ГБУ РЦСРН \"Доброе сердце\"",
+      "url": "https://max.ru/id1503015100_gos",
+      "icon": "❤️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "tamisk",
+      "name": "ГБУ РДРЦ «Тамиск»",
+      "url": "https://max.ru/id1505005612_gos",
+      "icon": "🏔️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "rcrisnoda",
+      "name": "ГБУ «РЦРИсНОДА»",
+      "url": "https://max.ru/id1516619653_gos",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "cdp",
+      "name": "ГБУ «ЦДП в г. Владикавказ»",
+      "url": "https://max.ru/id1516619004_gos",
+      "icon": "👶",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "cgko",
+      "name": "ГБУ \"ЦГКО РСО-Алания\"",
+      "url": "https://max.ru/id1513067838_gos",
+      "icon": "📊",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "knopka_dobra",
+      "name": "Кнопка Добра",
+      "url": "https://max.ru/dobrokdm_bot",
+      "icon": "❤️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "social"
+      ]
+    },
+    {
+      "id": "bot_mintrud",
+      "name": "Минтруд РСО-Алания Бот",
+      "url": "https://max.ru/mintrudrsoa_bot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "bot_minjkh",
+      "name": "Министерство ЖКХ и ТЭ РСО-Алания",
+      "url": "https://max.ru/minjkh_rso_a_bot",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "bot_minnats",
+      "name": "Миннац РСО-Алания чат-бот",
+      "url": "https://max.ru/minnats_chatbot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "bot_minsport",
+      "name": "Министерство физической культуры и спорта РСО-Алания",
+      "url": "https://max.ru/minsportrsobot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "bot_sogma",
+      "name": "СОГМА",
+      "url": "https://max.ru/sogma_official_bot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "bot_skgmi",
+      "name": "Чат-бот СКГМИ (ГТУ)",
+      "url": "https://max.ru/skgmi_gtu_bot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "bot_vke",
+      "name": "ГБПОУ \"Владикавказский Колледж Электроники\"",
+      "url": "https://max.ru/vke_helper_bot",
+      "icon": "🤖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "rkb",
+      "name": "РКБ",
+      "url": "https://max.ru/rkb_notification_bot",
+      "icon": "🚑",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "skmmc",
+      "name": "СК ММЦ (г. Беслан) — бот",
+      "url": "https://max.ru/skmmcmed_bot",
+      "icon": "🏥",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "bots"
+      ]
+    },
+    {
+      "id": "transport_electric",
+      "name": "Расписание электротранспорта",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/electrictransportschedule",
+      "icon": "🚋",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "transport_vld",
+      "name": "Городские маршруты Владикавказа",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/vldmunicipalschedule",
+      "icon": "🚌",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "transport_alania",
+      "name": "Муниципальные маршруты РСО-Алания",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/alaniamunicipalschedule",
+      "icon": "🚌",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "transport_intermunicipal",
+      "name": "Межмуниципальные маршруты",
+      "url": "https://komtrans.alania.gov.ru/activity/infoforpassengers/intmunicipalschedule",
+      "icon": "🚍",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "transport"
+      ]
+    },
+    {
+      "id": "sever_osetia",
+      "name": "Газета «Северная Осетия»",
+      "url": "https://max.ru/id1501006809_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "rastdzinad",
+      "name": "Газета «Растдзинад»",
+      "url": "https://max.ru/id1504031916_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "slovo",
+      "name": "Газета «Слово»",
+      "url": "https://max.ru/id1504015103_gos",
+      "icon": "",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "ir_inform",
+      "name": "Ир Информ",
+      "url": "https://max.ru/id1501003607_gos",
+      "icon": "📡",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "mah_dug",
+      "name": "Журнал «Мах дуг»",
+      "url": "https://max.ru/id1502008950_gos",
+      "icon": "📖",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    },
+    {
+      "id": "ams_vlk",
+      "name": "АМС г. Владикавказа",
+      "url": "https://max.ru/id1501002346_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_alagir",
+      "name": "АМС Алагирского муниципального района",
+      "url": "https://max.ru/id1505006052_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_ardon",
+      "name": "АМС Ардонского района",
+      "url": "https://max.ru/id1506003030_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_digora",
+      "name": "АМС Дигорского муниципального района",
+      "url": "https://max.ru/id1507002423_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_iraf",
+      "name": "АМС Ирафского муниципального района",
+      "url": "https://max.ru/id1508002546_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_kirov",
+      "name": "АМС Кировского муниципального района",
+      "url": "https://max.ru/id1509000622_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "ams_mozdok",
+      "name": "АМС Моздокского района",
+      "url": "https://max.ru/id1510007380_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "pravober",
+      "name": "АМС Правобережного района",
+      "url": "https://max.ru/id1511006879_gos",
+      "icon": "🏘️",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "selfgov"
+      ]
+    },
+    {
+      "id": "mintrud",
+      "name": "Министерство труда и социального развития РСО-Алания",
+      "url": "https://max.ru/mintrud_15",
+      "icon": "🤝",
+      "avatar": "",
+      "group": "Министерства",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "comtransport",
+      "name": "Комитет по транспорту РСО-Алания",
+      "url": "https://max.ru/id1500027796_gos",
+      "icon": "🚌",
+      "avatar": "",
+      "group": "Комитеты",
+      "categories": [
+        "government"
+      ]
+    },
+    {
+      "id": "ggau",
+      "name": "Горский государственный аграрный университет",
+      "url": "https://max.ru/id1503014227_biz",
+      "icon": "🎓",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "universities"
+      ]
+    },
+    {
+      "id": "nogdzau",
+      "name": "Газета «Ног Дзау»",
+      "url": "https://max.ru/id1501003290_gos",
+      "icon": "📰",
+      "avatar": "",
+      "group": "",
+      "categories": [
+        "media"
+      ]
+    }
+  ],
+  "featured": [
+    "governor",
+    "gov",
+    "parlament",
+    "mfc"
+  ]
+}
