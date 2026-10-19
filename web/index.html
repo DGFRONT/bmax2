@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Сервисы региона</title>
+    <script src="https://st.max.ru/js/max-web-app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+<body>
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-logo">🏛️</div>
+            <h1 class="welcome-title">Сервисы региона</h1>
+            <p class="welcome-subtitle">Все государственные услуги и организации в одном месте</p>
+            <button id="startBtn" class="welcome-btn" type="button">Открыть приложение</button>
+        </div>
+    </div>
+
+    <div id="mainScreen" class="app hidden">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Сервисы региона</h1>
+                <button class="icon-btn" id="allOrgBtn" type="button" title="Все организации" aria-label="Все организации">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-box">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                    <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="search" id="searchInput" placeholder="Найти организацию..." class="search-input" autocomplete="off" enterkeyhint="search">
+            </div>
+            <div class="search-results hidden" id="searchResults"></div>
+        </section>
+
+        <div class="status hidden" id="status">
+            <div class="status-text" id="statusText"></div>
+            <button class="retry-btn hidden" id="retryBtn" type="button">Повторить</button>
+        </div>
+
+        <div id="catalog" class="hidden">
+            <section class="section">
+                <h2 class="section-title">Официальные каналы</h2>
+                <div class="horizontal-scroll" id="featuredList"></div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Категории</h2>
+                <div class="categories-grid" id="categoriesGrid"></div>
+            </section>
+        </div>
+    </div>
+
+    <div id="categoryScreen" class="screen hidden">
+        <header class="screen-header">
+            <button class="back-btn" type="button" data-back aria-label="Назад">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="screen-title" id="categoryTitle"></h1>
+        </header>
+        <div class="screen-content">
+            <div class="organizations-list" id="organizationsList"></div>
+        </div>
+    </div>
+
+    <div id="allOrgScreen" class="screen hidden">
+        <header class="screen-header">
+            <button class="back-btn" type="button" data-back aria-label="Назад">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="screen-title">Все организации</h1>
+        </header>
+        <div class="screen-content" id="allOrgContent">
+            <div class="alphabet-nav" id="alphabetNav"></div>
+            <div class="all-org-list" id="allOrgList"></div>
+        </div>
+    </div>
+</body>
+</html>

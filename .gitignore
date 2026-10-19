@@ -1,0 +1,7 @@
+.env
+/data/
+/bmax
+*.db
+*.db-shm
+*.db-wal
+/export/

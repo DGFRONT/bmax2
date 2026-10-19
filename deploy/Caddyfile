@@ -1,0 +1,22 @@
+{
+	email {$ACME_EMAIL}
+}
+
+# Caddy obtains and renews the Let's Encrypt certificate for DOMAIN itself.
+{$DOMAIN} {
+	encode zstd gzip
+
+	reverse_proxy app:8080 {
+		header_up X-Real-IP {remote_host}
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+
+	log {
+		output stdout
+		format json
+	}
+}
