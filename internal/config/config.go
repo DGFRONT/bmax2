@@ -25,6 +25,10 @@ type Config struct {
 	SeedDir string
 	// LogLevel is one of debug, info, warn, error.
 	LogLevel string
+	// BotPolling makes the server answer the bot chat with a welcome message.
+	BotPolling bool
+	// BotAPIURL is the MAX Bot API endpoint.
+	BotAPIURL string
 }
 
 // Load reads the configuration. Variables used by every command are required
@@ -37,7 +41,14 @@ func Load() (Config, error) {
 		AdminToken:   os.Getenv("ADMIN_TOKEN"),
 		SeedDir:      os.Getenv("SEED_DIR"),
 		LogLevel:     env("LOG_LEVEL", "info"),
+		BotAPIURL:    env("BOT_API_URL", "https://platform-api.max.ru"),
 	}
+
+	polling, err := strconv.ParseBool(env("BOT_POLLING", "true"))
+	if err != nil {
+		return Config{}, fmt.Errorf("BOT_POLLING: invalid boolean %q", os.Getenv("BOT_POLLING"))
+	}
+	c.BotPolling = polling
 
 	ttl, err := time.ParseDuration(env("INIT_DATA_TTL", "1h"))
 	if err != nil || ttl <= 0 {

@@ -18,6 +18,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/dgfront/bmax2/internal/bot"
 	"github.com/dgfront/bmax2/internal/config"
 	"github.com/dgfront/bmax2/internal/maxauth"
 	"github.com/dgfront/bmax2/internal/server"
@@ -120,6 +121,10 @@ func serve(ctx context.Context, cfg config.Config, log *slog.Logger) error {
 		WriteTimeout:      30 * time.Second,
 		IdleTimeout:       120 * time.Second,
 		ErrorLog:          slog.NewLogLogger(log.Handler(), slog.LevelWarn),
+	}
+
+	if cfg.BotPolling {
+		go bot.New(cfg.BotAPIURL, cfg.BotToken, log).Run(ctx)
 	}
 
 	errCh := make(chan error, 1)
