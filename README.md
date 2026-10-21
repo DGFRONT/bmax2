@@ -17,6 +17,7 @@ internal/maxauth/    проверка подписи initData от MAX
 internal/catalog/    формат каталога, валидация, публичный снимок
 internal/store/      SQLite: миграции, запросы, импорт/экспорт
 internal/server/     HTTP: публичное API, админ-API, раздача фронтенда
+internal/bot/        чат бота: приветствие с кнопками открытия мини-приложения
 web/                 мини-приложение (index.html, css, js)
 seed/                исходный каталог (catalog.json + media/), импортируется в пустую базу
 deploy/Caddyfile     HTTPS reverse proxy
@@ -50,6 +51,19 @@ deploy/Caddyfile     HTTPS reverse proxy
    Сервер проверяет подпись (HMAC-SHA256) и срок `auth_date`, затем отдаёт каталог из памяти (с ETag).
 3. `POST /api/v1/session` записывает пользователя и число его запусков в таблицу `app_users`.
 4. Ссылки на `max.ru` открываются внутри MAX через `WebApp.openMaxLink`, остальные — в браузере через `WebApp.openLink`.
+
+### Приветствие в чате бота
+
+Сервер сам отвечает в чате бота (long polling `GET /updates` MAX Bot API, токен тот же `BOT_TOKEN`).
+На кнопку «Начать» и на любое сообщение в личном чате бот присылает приветствие с кнопкой
+«Открыть» (`open_app`), которая запускает мини-приложение внутри MAX. В групповых чатах бот молчит.
+Бот сам ходит в API MAX, поэтому новые порты открывать не нужно.
+Текст и кнопки — в `internal/bot/welcome.go`.
+
+Если у бота настроен webhook (`GET /subscriptions` не пустой), MAX не отдаёт обновления
+через polling: удалите подписку (`DELETE /subscriptions?url=...`) или выключите приветствие
+переменной `BOT_POLLING=false`. Короткое описание бота, которое видно до нажатия «Начать»,
+задаётся в настройках бота на платформе MAX для партнёров.
 
 Deep-link параметры (`https://max.ru/<бот>?startapp=...`):
 
@@ -186,4 +200,6 @@ BOT_TOKEN=<токен> SEED_DIR=seed go run ./cmd/bmax    # http://localhost:808
 | `SEED_DIR` | пусто (в Docker `/app/seed`) | Каталог для первичного заполнения пустой базы |
 | `INIT_DATA_TTL` | `1h` | Максимальный возраст initData |
 | `LOG_LEVEL` | `info` | `debug`, `info`, `warn` или `error` |
+| `BOT_POLLING` | `true` | Отвечать в чате бота приветствием |
+| `BOT_API_URL` | `https://platform-api.max.ru` | Адрес MAX Bot API |
 | `DOMAIN`, `ACME_EMAIL` | — | Только для Caddy в `docker-compose.yml` |
