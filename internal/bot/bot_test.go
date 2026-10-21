@@ -89,26 +89,15 @@ func TestRunSendsWelcome(t *testing.T) {
 	if len(api.sent) != 2 {
 		t.Fatalf("sent to %d users, want 2 (no replies in groups or to bots)", len(api.sent))
 	}
-	if !strings.HasPrefix(api.sent["10"].Text, "Здравствуйте, Алан!") {
-		t.Errorf("greeting = %q", api.sent["10"].Text)
+	if !strings.HasPrefix(api.sent["10"].Text, "Добро пожаловать в официальный каталог сервисов") {
+		t.Errorf("text = %q", api.sent["10"].Text)
 	}
-	if !strings.HasPrefix(api.sent["11"].Text, "Здравствуйте, Зарина!") {
-		t.Errorf("greeting = %q", api.sent["11"].Text)
-	}
-
 	kb := api.sent["10"].Attachments
-	if len(kb) != 1 || kb[0].Type != "inline_keyboard" {
+	if len(kb) != 1 || kb[0].Type != "inline_keyboard" || len(kb[0].Payload.Buttons) != 1 {
 		t.Fatalf("attachments = %+v", kb)
 	}
-	first := kb[0].Payload.Buttons[0][0]
-	if first.Type != "open_app" || first.WebApp != "rso_bot" || first.Payload != "" {
-		t.Errorf("first button = %+v", first)
-	}
-	for _, row := range kb[0].Payload.Buttons[1:] {
-		for _, b := range row {
-			if b.WebApp != "rso_bot" || !strings.HasPrefix(b.Payload, "category_") {
-				t.Errorf("section button = %+v", b)
-			}
-		}
+	want := button{Type: "open_app", Text: "Открыть", WebApp: "rso_bot"}
+	if got := kb[0].Payload.Buttons[0]; len(got) != 1 || got[0] != want {
+		t.Errorf("buttons = %+v, want [%+v]", got, want)
 	}
 }

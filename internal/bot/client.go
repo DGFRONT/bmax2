@@ -39,10 +39,8 @@ type botInfo struct {
 }
 
 type user struct {
-	UserID    int64  `json:"user_id"`
-	FirstName string `json:"first_name"`
-	Name      string `json:"name"`
-	IsBot     bool   `json:"is_bot"`
+	UserID int64 `json:"user_id"`
+	IsBot  bool  `json:"is_bot"`
 }
 
 type update struct {
@@ -74,7 +72,6 @@ type subscriptionsResponse struct {
 
 type newMessage struct {
 	Text        string       `json:"text"`
-	Format      string       `json:"format,omitempty"`
 	Attachments []attachment `json:"attachments,omitempty"`
 }
 
@@ -92,8 +89,6 @@ type button struct {
 	Text string `json:"text"`
 	// WebApp is the username of the bot whose mini app an open_app button launches.
 	WebApp string `json:"web_app,omitempty"`
-	// Payload of an open_app button reaches the mini app as start_param.
-	Payload string `json:"payload,omitempty"`
 }
 
 func (c *client) me(ctx context.Context) (botInfo, error) {

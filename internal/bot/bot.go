@@ -80,11 +80,7 @@ func (b *Bot) handle(ctx context.Context, info botInfo, u update) {
 	if to == nil || to.IsBot || to.UserID == 0 {
 		return
 	}
-	name := to.FirstName
-	if name == "" {
-		name = to.Name
-	}
-	if err := b.api.sendToUser(ctx, to.UserID, welcomeMessage(name, info.Username)); err != nil {
+	if err := b.api.sendToUser(ctx, to.UserID, welcomeMessage(info.Username)); err != nil {
 		b.log.WarnContext(ctx, "bot: send welcome failed", "user", to.UserID, "err", err)
 		return
 	}
