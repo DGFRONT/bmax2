@@ -21,6 +21,7 @@ internal/bot/        чат бота: приветствие с кнопками
 web/                 мини-приложение (index.html, css, js)
 seed/                исходный каталог (catalog.json + media/), импортируется в пустую базу
 deploy/Caddyfile     HTTPS reverse proxy
+docs/GUIDE.md        полный гайд: схема работы, файлы, база, команды, проблемы
 ```
 
 ## Запуск на сервере
